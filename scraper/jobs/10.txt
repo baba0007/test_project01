@@ -1,4 +1,0 @@
-Company Name: FashionCloud 
-Skills needed: Python, Django, REST APIs, Ansible, Amazon AWS. Here at Fashion Cloud we want to build the best software possible to be able to support our growing user base. 
-More info: https://nl.indeed.com/viewjob?jk=88fa5b81d3202a5a&qd=CvZ9rarVh7v9cVpo6xH_xogxQQmKlrdIYaWPIZknk0IhlQe-YdNqJOc6sFcwzeJhm_DnOgJCsvzkzmt2kSC-THN_cmEdvvJFB46LV2BEs2CptQI94s5DsPOzRyYMc52A&indpubnum=7839952008968848&chnl=PyCareer&atk=1enja9ofou47i801 
-Posted date:  Posted 22 dagen geleden 

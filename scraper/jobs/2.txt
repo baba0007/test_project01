@@ -1,6 +1,0 @@
-Company Name: SteamDataSuite 
-Skills needed: Ingredients: Django, Python, PostgreSQL and the obvious CSS, JS and HTML. 
-We are looking for an experienced engineer/programmer who can make sure our 
-product continues to excel while we scale our ... 
-More info: /jobs/5692938138943488/python-engineer-at-gaming-analytics-startup/ 
-Posted date:  Posted 3 months ago 
