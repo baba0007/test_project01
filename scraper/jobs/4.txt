@@ -1,0 +1,4 @@
+Company Name: iBOOD 
+Skills needed: Design and implement Python microservices in Flask or serverless functions. Python, Flask, Django, Fast API, Pyramid or similar backend framework. 
+More info: https://nl.indeed.com/viewjob?jk=4df87f3b90785a9e&qd=CvZ9rarVh7v9cVpo6xH_xogxQQmKlrdIYaWPIZknk0IhlQe-YdNqJOc6sFcwzeJhm_DnOgJCsvzkzmt2kSC-THN_cmEdvvJFB46LV2BEs2CptQI94s5DsPOzRyYMc52A&indpubnum=7839952008968848&chnl=PyCareer&atk=1enja9ofou47i801 
+Posted date:  Posted 30+ dagen geleden 

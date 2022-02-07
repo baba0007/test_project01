@@ -1,0 +1,2038 @@
+<!DOCTYPE html>
+<html class="desktop withSiteHeaderTopFullImage
+">
+<head>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"d81cb9ea53","applicationID":"4008173","transactionName":"JVteFRNcXwpRSxxIQglAVRJOWl0CUUFsSl4BWlUFPlxGEg==","queueTime":1,"applicationTime":553,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"Ug8DUVVADAMAXFBVBA==",licenseKey:"d81cb9ea53",applicationID:"4008173"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var i,o=t("ee"),a=t(23),c={};try{i=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,i.indexOf("dev")!==-1&&(c.dev=!0),i.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&o.on("internal-error",function(t){r(t.stack)}),c.dev&&o.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{p?p-=1:i(c||new UncaughtException(t,e,n),!0)}catch(f){try{o("ierr",[f,s.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function i(t,e){var n=e?null:s.now();o("err",[t,n])}var o=t("handle"),a=t(24),c=t("ee"),s=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(9),t(8),"addEventListener"in window&&t(5),s.xhrWrappable&&t(10),d=!0)}c.on("fn-start",function(t,e,n){d&&(p+=1)}),c.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,i(n))}),c.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),c.on("internal-error",function(t){o("ierr",[t,s.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var i=t("ee"),o=t("handle"),a=t(9),c=t(8),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",g="pushState",y=t("loader");y.features.stn=!0,t(7),"addEventListener"in window&&t(5);var x=NREUM.o.EV;i.on(m,function(t,e){var n=t[0];n instanceof x&&(this.bstStart=y.now())}),i.on(w,function(t,e){var n=t[0];n instanceof x&&o("bst",[n,e,this.bstStart,y.now()])}),a.on(m,function(t,e,n){this.bstStart=y.now(),this.bstType=n}),a.on(w,function(t,e){o(v,[e,this.bstStart,y.now(),this.bstType])}),c.on(m,function(){this.bstStart=y.now()}),c.on(w,function(t,e){o(v,[e,this.bstStart,y.now(),"requestAnimationFrame"])}),i.on(g+p,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),i.on(g+h,function(t){o("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){o(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){o(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&i(e)}function i(t){c.inPlace(t,[u,d],"-",o)}function o(t,e){return t[1]}var a=t("ee").get("events"),c=t("wrap-function")(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(i(window),i(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=o(arguments),e={};i.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var c=r.apply(this,t);return i.emit(n+"start",[t,a],c),c.then(function(t){return i.emit(n+"end",[null,t],c),t},function(t){throw i.emit(n+"end",[t],c),t})})}var i=t("ee").get("fetch"),o=t(24),a=t(23);e.exports=i;var c=window,s="fetch-",f=s+"body-",u=["arrayBuffer","blob","json","text","formData"],d=c.Request,l=c.Response,p=c.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(c,"fetch",s),i.on(s+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),i.emit(s+"done",[null,e],n)}else i.emit(s+"done",[t],n)}))},{}],7:[function(t,e,n){var r=t("ee").get("history"),i=t("wrap-function")(r);e.exports=r;var o=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;o&&o.pushState&&o.replaceState&&(a=o),i.inPlace(a,["pushState","replaceState"],"-")},{}],8:[function(t,e,n){var r=t("ee").get("raf"),i=t("wrap-function")(r),o="equestAnimationFrame";e.exports=r,i.inPlace(window,["r"+o,"mozR"+o,"webkitR"+o,"msR"+o],"raf-"),r.on("raf-start",function(t){t[0]=i(t[0],"fn-")})},{}],9:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function i(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var o=t("ee").get("timer"),a=t("wrap-function")(o),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=o,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),o.on(s+u,r),o.on(c+u,i)},{}],10:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function i(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",c)}function o(t){y.push(t),h&&(b?b.then(a):w?w(a):(E=-E,R.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(v,i,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),o(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!w&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],11:[function(t,e,n){function r(t){if(!c(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=p.generateSpanId(),m=p.generateTraceId(),w=Date.now(),v={spanId:h,traceId:m,timestamp:w};return(t.sameOrigin||s(t)&&l())&&(v.traceContextParentHeader=i(h,m),v.traceContextStateHeader=o(h,w,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&s(t)&&d())&&(v.newrelicHeader=a(h,m,w,n,r,f)),v}function i(t,e){return"00-"+e+"-"+t+"-01"}function o(t,e,n,r,i){var o=0,a="",c=1,s="",f="";return i+"@nr="+o+"-"+c+"-"+n+"-"+r+"-"+t+"-"+a+"-"+s+"-"+f+"-"+e}function a(t,e,n,r,i,o){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var c={v:[0,1],d:{ty:"Browser",ac:r,ap:i,id:t,tr:e,ti:n}};return o&&r!==o&&(c.d.tk=o),btoa(JSON.stringify(c))}function c(t){return f()&&s(t)}function s(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var i=h(n.allowed_origins[r]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function l(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var p=t(20),h=t(13);e.exports={generateTracePayload:r,shouldGenerateTrace:c}},{}],12:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):o(this,t),n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime]))}}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=s(e),t.sameOrigin=t.parsedOrigin.sameOrigin}function o(t,e){t.params.status=e.status;var n=w(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(13),f=t(11).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(17),m=t(16),w=t(14),v=window.XMLHttpRequest;a.features.xhr=!0,t(10),t(6),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,t.addEventListener("load",function(n){o(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],i=this;if(n&&r){var o=m(r);o&&(n.txSize=o)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||i.loadCaptureCalled||(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<l;c++)e.addEventListener(d[c],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof v&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof v&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof v&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url&&(n=t[0].url),n&&(this.parsedOrigin=s(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=f(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if("string"==typeof t[0]){var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),e(o.headers,i)&&(this.dt=i),t.length>1?t[1]=o:t.push(o)}else t[0]&&t[0].headers&&e(t[0].headers,i)&&(this.dt=i)})}},{}],13:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,i={};e.href=t,i.port=e.port;var o=e.href.split("://");!i.port&&o[1]&&(i.port=o[1].split("/")[0].split("@").pop().split(":")[1]),i.port&&"0"!==i.port||(i.port="https"===o[0]?"443":"80"),i.hostname=e.hostname||n.hostname,i.pathname=e.pathname,i.protocol=o[0],"/"!==i.pathname.charAt(0)&&(i.pathname="/"+i.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,c=e.hostname===document.domain&&e.port===n.port;return i.sameOrigin=a&&(!e.hostname||c),"/"===i.pathname&&(r[t]=i),i}},{}],14:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?i(t.response):"text"===n||""===n||void 0===n?i(t.responseText):void 0}var i=t(16);e.exports=r},{}],15:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(23),c=t(24),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,e){u[e]=i(l+e,!0,"api")}),u.addPageAction=i(l+"addPageAction",!0),u.setCurrentRouteName=i(l+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(p+"tracer",[f.now(),t,n],r),function(){if(s.emit((i?"":"no-")+"fn-start",[f.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw s.emit("fn-err",[arguments,this,t],n),t}finally{s.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=i(p+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,f.now(),!1,e])}},{}],16:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],17:[function(t,e,n){var r=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(r=+i[1]),e.exports=r},{}],18:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(25);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],19:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof h&&!w){var e=Math.round(t.timeStamp),n={type:t.type};e<=l.now()?n.fid=l.now()-e:e>l.offset&&e<=Date.now()?(e-=l.offset,n.fid=l.now()-e):e=l.now(),w=!0,d("timing",["fi",e,n])}}function c(t){d("pageHide",[l.now(),t])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var s,f,u,d=t("handle"),l=t("loader"),p=t(22),h=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(m){}f=new PerformanceObserver(i);try{f.observe({entryTypes:["largest-contentful-paint"]})}catch(m){}u=new PerformanceObserver(o);try{u.observe({type:"layout-shift",buffered:!0})}catch(m){}}if("addEventListener"in document){var w=!1,v=["click","keydown","mousedown","pointerdown","touchstart"];v.forEach(function(t){document.addEventListener(t,a,!1)})}p(c)}},{}],20:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var i,o="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",c=0;c<o.length;c++)i=o[c],"x"===i?a+=t().toString(16):"y"===i?(i=3&t()|8,a+=i.toString(16)):a+=i;return a}function i(){return a(16)}function o(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,i=window.crypto||window.msCrypto;i&&i.getRandomValues&&Uint8Array&&(n=i.getRandomValues(new Uint8Array(31)));for(var o=[],a=0;a<t;a++)o.push(e().toString(16));return o.join("")}e.exports={generateUuid:r,generateSpanId:i,generateTraceId:o}},{}],21:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,s=c.match(a);s&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=s[1])}e.exports={agent:i,version:o,match:r}},{}],22:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],23:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],24:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],25:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?s(t,c,o):o()}function n(n,r,i,o){if(!l.aborted||o){t&&t(n,r,i);for(var a=e(i),c=m(n),s=c.length,f=0;f<s;f++)c[f].apply(a,r);var d=u[y[n]];return d&&d.push([x,n,r,a]),a}}function p(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function w(t){return d[t]=d[t]||i(n)}function v(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var g={},y={},x={on:p,addEventListener:p,removeEventListener:h,emit:n,get:w,listeners:m,context:e,buffer:v,abort:a,aborted:!1};return x}function o(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(23),u={},d={},l=e.exports=i();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=x.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(g,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+x.offset],null,"api"),c("timing",["load",n]);var r=l.createElement("script");r.src="https://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+x.offset],null,"api")}var a=t(18),c=t("handle"),s=t(23),f=t("ee"),u=t(21),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},y=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),x=e.exports={offset:a.getLastTimestamp(),now:a,origin:v,features:{},xhrWrappable:y,userAgent:u};t(15),t(19),l[p]?(l[p]("DOMContentLoaded",o,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",i),d[h]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var b=0},{}],"wrap-function":[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var i=t("ee"),o=t(24),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,i){function nrWrapper(){var r,a,c,s;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,i],c])}u(e+"start",[r,a,i],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,i,o){i||(i="");var a,c,s,f="-"===i.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+i:i,o,c))}function u(n,r,i){if(!s||e){var o=s;s=!0;try{t.emit(n,r,i,e)}catch(a){l([a,n,r,i])}s=o}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var i in t)c.call(t,i)&&(e[i]=t[i]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=i),n.inPlace=f,n.flag=a,n}},{}]},{},["loader",2,12,4,3]);</script>
+  <title>Popular Quotes</title>
+
+<meta content="Popular quotes from Goodreads members. Marilyn Monroe: ‘I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times h..." name='description'>
+<meta content='telephone=no' name='format-detection'>
+<link href='https://www.goodreads.com/quotes' rel='canonical'>
+
+
+
+  
+
+          <script type="text/javascript">
+        if (window.Mobvious === undefined) {
+          window.Mobvious = {};
+        }
+        window.Mobvious.device_type = 'desktop';
+        </script>
+
+
+  
+<script src="https://s.gr-assets.com/assets/webfontloader-032396443d87656441bab7d02193984c.js"></script>
+<script>
+//<![CDATA[
+
+  WebFont.load({
+    classes: false,
+    custom: {
+      families: ["Lato:n4,n7,i4", "Merriweather:n4,n7,i4"],
+      urls: ["https://s.gr-assets.com/assets/gr/fonts-e256f84093cc13b27f5b82343398031a.css"]
+    }
+  });
+
+//]]>
+</script>
+
+  <link rel="stylesheet" media="all" href="https://s.gr-assets.com/assets/goodreads-51809dd0841aca42d53e6a6178a22d88.css" />
+
+  
+
+  <link rel="stylesheet" media="screen" href="https://s.gr-assets.com/assets/common_images-670d97636259cafc355c94fc43e871d7.css" />
+
+  <script src="https://s.gr-assets.com/assets/desktop/libraries-fedbf6e14cf39d43205f9973c3bdce09.js"></script>
+  <script src="https://s.gr-assets.com/assets/application-2875ce97e5c69c01f01b157e0f6d85af.js"></script>
+
+    <script>
+  //<![CDATA[
+    var gptAdSlots = gptAdSlots || [];
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function() {
+      var gads = document.createElement("script");
+      gads.async = true;
+      gads.type = "text/javascript";
+      var useSSL = "https:" == document.location.protocol;
+      gads.src = (useSSL ? "https:" : "http:") +
+      "//securepubads.g.doubleclick.net/tag/js/gpt.js";
+      var node = document.getElementsByTagName("script")[0];
+      node.parentNode.insertBefore(gads, node);
+    })();
+    // page settings
+  //]]>
+</script>
+<script>
+  //<![CDATA[
+    googletag.cmd.push(function() {
+      googletag.pubads().setTargeting("sid", "osid.09ab9d401e683b57ca2e8547dd1af879");
+    googletag.pubads().setTargeting("grsession", "osid.09ab9d401e683b57ca2e8547dd1af879");
+    googletag.pubads().setTargeting("surface", "desktop");
+    googletag.pubads().setTargeting("signedin", "false");
+    googletag.pubads().setTargeting("gr_author", "false");
+    googletag.pubads().setTargeting("author", []);
+    googletag.pubads().setTargeting("shelf", ["inspirational","life","love"]);
+    googletag.pubads().setTargeting("tags", ["210","4722","4125"]);
+    googletag.pubads().setTargeting("gtargeting", "1");
+    googletag.pubads().setTargeting("resource", "quotes_index");
+      googletag.pubads().enableAsyncRendering();
+      googletag.pubads().enableSingleRequest();
+      googletag.pubads().collapseEmptyDivs(true);
+      googletag.pubads().disableInitialLoad();
+      googletag.enableServices();
+    });
+  //]]>
+</script>
+<script>
+  //<![CDATA[
+    ! function(a9, a, p, s, t, A, g) {
+      if (a[a9]) return;
+    
+      function q(c, r) {
+        a[a9]._Q.push([c, r])
+      }
+      a[a9] = {
+      init: function() {
+        q("i", arguments)
+      },
+      fetchBids: function() {
+        q("f", arguments)
+      },
+      setDisplayBids: function() {},
+        _Q: []
+      };
+      A = p.createElement(s);
+      A.async = !0;
+      A.src = t;
+      g = p.getElementsByTagName(s)[0];
+      g.parentNode.insertBefore(A, g)
+    }("apstag", window, document, "script", "//c.amazon-adsystem.com/aax2/apstag.js");
+    
+    apstag.init({
+      pubID: '3211', adServer: 'googletag', bidTimeout: 4e3, params: { aps_privacy: '1YN' }
+    });
+  //]]>
+</script>
+
+
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="H6lCdn97Hm+G0O9NTHZiKE8Q6kRgf9a1kvVpKxC1VE/pBFiUBl+hG/XKPXQc3IxFT6wrg07CYCmc2U4i1ZkKew==" />
+
+  <meta name="request-id" content="PBBAPP40VM7T74CS1AAB" />
+
+    <script src="https://s.gr-assets.com/assets/react_client_side/external_dependencies-51654d5556.js" defer="defer"></script>
+<script src="https://s.gr-assets.com/assets/react_client_side/site_header-6b419369c5.js" defer="defer"></script>
+<script src="https://s.gr-assets.com/assets/react_client_side/custom_react_ujs-b1220d5e0a4820e90b905c302fc5cb52.js" defer="defer"></script>
+
+
+  
+
+  
+  
+  
+
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Goodreads">
+
+    <script>
+//<![CDATA[
+
+  var GoodreadsAnalytics = GoodreadsAnalytics || {};
+  var _gaq = _gaq || [];
+
+  GoodreadsAnalytics.push = function () {
+    _gaq.push.apply(_gaq, arguments);
+  }
+
+  GoodreadsAnalytics.push(['_setAccount', 'UA-968618-1']);
+  GoodreadsAnalytics.push(['_setCustomVar',
+    1,                        // Slot 1
+    'User Status',            // Custom variable name
+    'signed_out',  // Custom variable value: signed_out, signed_in,
+                              //   signed_in_facebook_connected, or
+                              //   goodreads_member_previously_signed_in
+    2                         // Visit-level scope, which means slot 1 will be
+                              //   free when the visit ends.
+  ]);
+  GoodreadsAnalytics.push(['_setCustomVar',
+    2,                        // Slot 2
+    'Device Type',            // Custom variable name
+    'desktop',         // Custom variable value: desktop, mobile, or
+                              //   tablet
+    2                         // Visit-level scope, which means slot 2 will be
+                              //   free when the visit ends.
+  ]);
+  GoodreadsAnalytics.push(['_trackPageview']);
+
+  (function () {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+
+//]]>
+</script>
+
+    <meta name="description" content="Popular quotes from Goodreads members. Marilyn Monroe: ‘I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times h...">
+
+
+  <meta content='summary' name='twitter:card'>
+<meta content='@goodreads' name='twitter:site'>
+<meta content='Popular Quotes' name='twitter:title'>
+<meta content="Popular quotes from Goodreads members. Marilyn Monroe: ‘I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times h..." name='twitter:description'>
+
+
+  <meta name="verify-v1" content="cEf8XOH0pulh1aYQeZ1gkXHsQ3dMPSyIGGYqmF53690=">
+  <meta name="google-site-verification" content="PfFjeZ9OK1RrUrKlmAPn_iZJ_vgHaZO1YQ-QlG2VsJs" />
+  <meta name="apple-itunes-app" content="app-id=355833469">
+</head>
+
+
+<body class="">
+<div data-react-class="ReactComponents.StoresInitializer" data-react-props="{}"><noscript data-reactid=".sn0izk6uio" data-react-checksum="-1374678692"></noscript></div>
+
+<div class="content">
+    <script>
+  //<![CDATA[
+    var initializeGrfb = function() {
+      $grfb.initialize({
+        appId: "2415071772"
+      });
+    };
+    if (typeof $grfb !== "undefined") {
+      initializeGrfb();
+    } else {
+      window.addEventListener("DOMContentLoaded", function() {
+        if (typeof $grfb !== "undefined") {
+          initializeGrfb();
+        }
+      });
+    }
+  //]]>
+</script>
+
+<script>
+  //<![CDATA[
+    function loadScript(url, callback) {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+    
+      if (script.readyState) {  //Internet Explorer
+          script.onreadystatechange = function() {
+            if (script.readyState == "loaded" ||
+                    script.readyState == "complete") {
+              script.onreadystatechange = null;
+              callback();
+            }
+          };
+      } else {  //Other browsers
+        script.onload = function() {
+          callback();
+        };
+      }
+    
+      script.src = url;
+      document.getElementsByTagName("head")[0].appendChild(script);
+    }
+    
+    function initAppleId() {
+      AppleID.auth.init({
+        clientId : 'com.goodreads.app', 
+        scope : 'name email',
+        redirectURI: 'https://www.goodreads.com/apple_users/sign_in_with_apple_web',
+        state: 'apple_oauth_state_f236d401-abae-40cb-ab65-7f160c9ab7df'
+      });
+    }
+    
+    var initializeSiwa = function() {
+      var APPLE_SIGN_IN_JS_URL =  "https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"
+      loadScript(APPLE_SIGN_IN_JS_URL, initAppleId);
+    };
+    if (typeof AppleID !== "undefined") {
+      initAppleId();
+    } else {
+      initializeSiwa();
+    }
+  //]]>
+</script>
+
+<div class='siteHeader'>
+<div data-react-class="ReactComponents.HeaderStoreConnector" data-react-props="{&quot;myBooksUrl&quot;:&quot;/review/list?ref=nav_mybooks&quot;,&quot;browseUrl&quot;:&quot;/book?ref=nav_brws&quot;,&quot;recommendationsUrl&quot;:&quot;/recommendations?ref=nav_brws_recs&quot;,&quot;choiceAwardsUrl&quot;:&quot;/choiceawards?ref=nav_brws_gca&quot;,&quot;genresIndexUrl&quot;:&quot;/genres?ref=nav_brws_genres&quot;,&quot;giveawayUrl&quot;:&quot;/giveaway?ref=nav_brws_giveaways&quot;,&quot;exploreUrl&quot;:&quot;/book?ref=nav_brws_explore&quot;,&quot;homeUrl&quot;:&quot;/?ref=nav_home&quot;,&quot;listUrl&quot;:&quot;/list?ref=nav_brws_lists&quot;,&quot;newsUrl&quot;:&quot;/news?ref=nav_brws_news&quot;,&quot;communityUrl&quot;:&quot;/group?ref=nav_comm&quot;,&quot;groupsUrl&quot;:&quot;/group?ref=nav_comm_groups&quot;,&quot;quotesUrl&quot;:&quot;/quotes?ref=nav_comm_quotes&quot;,&quot;featuredAskAuthorUrl&quot;:&quot;/ask_the_author?ref=nav_comm_askauthor&quot;,&quot;discussionsUrl&quot;:&quot;/topic?ref=nav_comm_discuss&quot;,&quot;autocompleteUrl&quot;:&quot;/book/auto_complete&quot;,&quot;defaultLogoActionUrl&quot;:&quot;/&quot;,&quot;topFullImage&quot;:{&quot;clickthroughUrl&quot;:&quot;https://www.goodreads.com/choiceawards/best-books-2020?ref=gca2020_eb&quot;,&quot;altText&quot;:&quot;Goodreads Choice Awards 2020&quot;,&quot;backgroundColor&quot;:&quot;#32362D&quot;,&quot;xs&quot;:{&quot;1x&quot;:&quot;https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/siteheaderbannerimages/1603221987i/31.jpg&quot;,&quot;2x&quot;:&quot;https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/siteheaderbannerimages/1603221992i/32.jpg&quot;},&quot;md&quot;:{&quot;1x&quot;:&quot;https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/siteheaderbannerimages/1603221975i/29.jpg&quot;,&quot;2x&quot;:&quot;https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/siteheaderbannerimages/1603221981i/30.jpg&quot;}},&quot;logo&quot;:{&quot;imageUrl&quot;:&quot;https://images.gr-assets.com/doodles/1603221570i/24.svg&quot;,&quot;clickthroughUrl&quot;:&quot;/&quot;,&quot;altText&quot;:&quot;Goodreads Choice Awards 2020&quot;},&quot;searchPath&quot;:&quot;/search&quot;,&quot;newReleasesUrl&quot;:&quot;/book/popular_by_date/2020/11?ref=nav_brws_newrels&quot;,&quot;signInUrl&quot;:&quot;/user/sign_in&quot;,&quot;signUpUrl&quot;:&quot;/user/sign_up&quot;,&quot;signInWithReturnUrl&quot;:true,&quot;deployServices&quot;:[],&quot;defaultLogoAltText&quot;:&quot;Goodreads Home&quot;,&quot;mobviousDeviceType&quot;:&quot;desktop&quot;}"><header data-reactid=".14x191bsz5s" data-react-checksum="1508795260"><div class="siteHeader__topFullImageContainer" style="background-color:#32362D;" data-reactid=".14x191bsz5s.0"><a class="siteHeader__topFullImageLink" href="https://www.goodreads.com/choiceawards/best-books-2020?ref=gca2020_eb" data-reactid=".14x191bsz5s.0.0"><picture data-reactid=".14x191bsz5s.0.0.0"><source media="(min-width: 768px)" srcset="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/siteheaderbannerimages/1603221975i/29.jpg 1x, https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/siteheaderbannerimages/1603221981i/30.jpg 2x" data-reactid=".14x191bsz5s.0.0.0.0"/><img alt="Goodreads Choice Awards 2020" class="siteHeader__topFullImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/siteheaderbannerimages/1603221987i/31.jpg" srcset="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/siteheaderbannerimages/1603221992i/32.jpg 2x" data-reactid=".14x191bsz5s.0.0.0.1"/></picture></a></div><div class="siteHeader__topLine gr-box gr-box--withShadow" data-reactid=".14x191bsz5s.1"><div class="siteHeader__contents" data-reactid=".14x191bsz5s.1.0"><div class="siteHeader__topLevelItem siteHeader__topLevelItem--searchIcon" data-reactid=".14x191bsz5s.1.0.0"><button class="siteHeader__searchIcon gr-iconButton" aria-label="Toggle search" type="button" data-ux-click="true" data-reactid=".14x191bsz5s.1.0.0.0"></button></div><a href="/" class="siteHeader__logo siteHeader__logo--doodle" data-reactid=".14x191bsz5s.1.0.1"><picture data-reactid=".14x191bsz5s.1.0.1.0"><img src="https://images.gr-assets.com/doodles/1603221570i/24.svg" alt="Goodreads Choice Awards 2020" data-reactid=".14x191bsz5s.1.0.1.0.0"/></picture></a><nav class="siteHeader__primaryNavInline" data-reactid=".14x191bsz5s.1.0.2"><ul role="menu" class="siteHeader__menuList" data-reactid=".14x191bsz5s.1.0.2.0"><li class="siteHeader__topLevelItem siteHeader__topLevelItem--home" data-reactid=".14x191bsz5s.1.0.2.0.0"><a href="/?ref=nav_home" class="siteHeader__topLevelLink" data-reactid=".14x191bsz5s.1.0.2.0.0.0">Home</a></li><li class="siteHeader__topLevelItem" data-reactid=".14x191bsz5s.1.0.2.0.1"><a href="/review/list?ref=nav_mybooks" class="siteHeader__topLevelLink" data-reactid=".14x191bsz5s.1.0.2.0.1.0">My Books</a></li><li class="siteHeader__topLevelItem" data-reactid=".14x191bsz5s.1.0.2.0.2"><div class="primaryNavMenu primaryNavMenu--siteHeaderBrowseMenu ignore-react-onclickoutside" data-reactid=".14x191bsz5s.1.0.2.0.2.0"><a class="primaryNavMenu__trigger primaryNavMenu__trigger--siteHeaderBrowseMenu" href="/book?ref=nav_brws" role="button" aria-haspopup="true" aria-expanded="false" data-ux-click="true" data-reactid=".14x191bsz5s.1.0.2.0.2.0.0"><span data-reactid=".14x191bsz5s.1.0.2.0.2.0.0.0">Browse ▾</span></a><div class="primaryNavMenu__menu gr-box gr-box--withShadowLarge wide" role="menu" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1"><div class="siteHeader__browseMenuDropdown" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0"><ul class="siteHeader__subNav" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.0"><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.0.0"><a href="/recommendations?ref=nav_brws_recs" class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.0.0.0">Recommendations</a></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.0.1"><a href="/choiceawards?ref=nav_brws_gca" class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.0.1.0">Choice Awards</a></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.0.2"><a href="/genres?ref=nav_brws_genres" class="siteHeader__subNavLink siteHeader__subNavLink--genresIndex" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.0.2.0">Genres</a></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.0.3"><a href="/giveaway?ref=nav_brws_giveaways" class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.0.3.0">Giveaways</a></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.0.4"><a href="/book/popular_by_date/2020/11?ref=nav_brws_newrels" class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.0.4.0">New Releases</a></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.0.5"><a href="/list?ref=nav_brws_lists" class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.0.5.0">Lists</a></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.0.6"><a href="/book?ref=nav_brws_explore" class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.0.6.0">Explore</a></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.0.7"><a href="/news?ref=nav_brws_news" class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.0.7.0">News &amp; Interviews</a></li></ul><div class="siteHeader__spotlight siteHeader__spotlight--withoutSubMenu" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1"><div class="genreListContainer" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0"><div class="siteHeader__heading siteHeader__title" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.0">Genres</div><ul class="genreList" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList0"><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList0.0:$Art"><a href="/genres/art" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList0.0:$Art.0">Art</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList0.0:$Biography"><a href="/genres/biography" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList0.0:$Biography.0">Biography</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList0.0:$Business"><a href="/genres/business" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList0.0:$Business.0">Business</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList0.0:$Children&#x27;s"><a href="/genres/children-s" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList0.0:$Children&#x27;s.0">Children&#x27;s</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList0.0:$Christian"><a href="/genres/christian" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList0.0:$Christian.0">Christian</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList0.0:$Classics"><a href="/genres/classics" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList0.0:$Classics.0">Classics</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList0.0:$Comics"><a href="/genres/comics" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList0.0:$Comics.0">Comics</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList0.0:$Cookbooks"><a href="/genres/cookbooks" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList0.0:$Cookbooks.0">Cookbooks</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList0.0:$Ebooks"><a href="/genres/ebooks" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList0.0:$Ebooks.0">Ebooks</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList0.0:$Fantasy"><a href="/genres/fantasy" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList0.0:$Fantasy.0">Fantasy</a></li></ul><ul class="genreList" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList1"><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList1.0:$Fiction"><a href="/genres/fiction" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList1.0:$Fiction.0">Fiction</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList1.0:$Graphic Novels"><a href="/genres/graphic-novels" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList1.0:$Graphic Novels.0">Graphic Novels</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList1.0:$Historical Fiction"><a href="/genres/historical-fiction" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList1.0:$Historical Fiction.0">Historical Fiction</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList1.0:$History"><a href="/genres/history" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList1.0:$History.0">History</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList1.0:$Horror"><a href="/genres/horror" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList1.0:$Horror.0">Horror</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList1.0:$Memoir"><a href="/genres/memoir" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList1.0:$Memoir.0">Memoir</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList1.0:$Music"><a href="/genres/music" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList1.0:$Music.0">Music</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList1.0:$Mystery"><a href="/genres/mystery" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList1.0:$Mystery.0">Mystery</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList1.0:$Nonfiction"><a href="/genres/non-fiction" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList1.0:$Nonfiction.0">Nonfiction</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList1.0:$Poetry"><a href="/genres/poetry" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList1.0:$Poetry.0">Poetry</a></li></ul><ul class="genreList" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList2"><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList2.0:$Psychology"><a href="/genres/psychology" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList2.0:$Psychology.0">Psychology</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList2.0:$Romance"><a href="/genres/romance" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList2.0:$Romance.0">Romance</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList2.0:$Science"><a href="/genres/science" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList2.0:$Science.0">Science</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList2.0:$Science Fiction"><a href="/genres/science-fiction" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList2.0:$Science Fiction.0">Science Fiction</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList2.0:$Self Help"><a href="/genres/self-help" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList2.0:$Self Help.0">Self Help</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList2.0:$Sports"><a href="/genres/sports" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList2.0:$Sports.0">Sports</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList2.0:$Thriller"><a href="/genres/thriller" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList2.0:$Thriller.0">Thriller</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList2.0:$Travel"><a href="/genres/travel" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList2.0:$Travel.0">Travel</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList2.0:$Young Adult"><a href="/genres/young-adult" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList2.0:$Young Adult.0">Young Adult</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList2.1"><a href="/genres" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.2.0.2.0.1.0.1.0.1:$genreList2.1.0">More Genres</a></li></ul></div></div></div></div></div></li><li class="siteHeader__topLevelItem siteHeader__topLevelItem--community" data-reactid=".14x191bsz5s.1.0.2.0.3"><div class="primaryNavMenu ignore-react-onclickoutside" data-reactid=".14x191bsz5s.1.0.2.0.3.0"><a class="primaryNavMenu__trigger" href="/group?ref=nav_comm" role="button" aria-haspopup="true" aria-expanded="false" data-ux-click="true" data-reactid=".14x191bsz5s.1.0.2.0.3.0.0"><span data-reactid=".14x191bsz5s.1.0.2.0.3.0.0.0">Community ▾</span></a><div class="primaryNavMenu__menu gr-box gr-box--withShadowLarge" role="menu" data-reactid=".14x191bsz5s.1.0.2.0.3.0.1"><ul class="siteHeader__subNav" data-reactid=".14x191bsz5s.1.0.2.0.3.0.1.0"><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.1.0.2.0.3.0.1.0.0"><a href="/group?ref=nav_comm_groups" class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.1.0.2.0.3.0.1.0.0.0">Groups</a></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.1.0.2.0.3.0.1.0.1"><a href="/topic?ref=nav_comm_discuss" class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.1.0.2.0.3.0.1.0.1.0">Discussions</a></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.1.0.2.0.3.0.1.0.2"><a href="/quotes?ref=nav_comm_quotes" class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.1.0.2.0.3.0.1.0.2.0">Quotes</a></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.1.0.2.0.3.0.1.0.3"><a href="/ask_the_author?ref=nav_comm_askauthor" class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.1.0.2.0.3.0.1.0.3.0">Ask the Author</a></li></ul></div></div></li></ul></nav><div accept-charset="UTF-8" class="searchBox searchBox--navbar" data-reactid=".14x191bsz5s.1.0.3"><form autocomplete="off" action="/search" class="searchBox__form" role="search" aria-label="Search for books to add to your shelves" data-reactid=".14x191bsz5s.1.0.3.0"><input class="searchBox__input searchBox__input--navbar" autocomplete="off" name="q" type="text" placeholder="Search books" aria-label="Search books" aria-controls="searchResults" data-reactid=".14x191bsz5s.1.0.3.0.0"/><input type="hidden" name="qid" value="" data-reactid=".14x191bsz5s.1.0.3.0.1"/><button type="submit" class="searchBox__icon--magnifyingGlass gr-iconButton searchBox__icon searchBox__icon--navbar" aria-label="Search" data-reactid=".14x191bsz5s.1.0.3.0.2"></button></form></div><ul class="siteHeader__personal" data-reactid=".14x191bsz5s.1.0.4"><li class="siteHeader__topLevelItem siteHeader__topLevelItem--signedOut" data-reactid=".14x191bsz5s.1.0.4.0"><a href="/user/sign_in?returnurl=undefined" rel="nofollow" class="siteHeader__topLevelLink" data-reactid=".14x191bsz5s.1.0.4.0.0">Sign In</a></li><li class="siteHeader__topLevelItem siteHeader__topLevelItem--signedOut" data-reactid=".14x191bsz5s.1.0.4.1"><a href="/user/sign_up" rel="nofollow" class="siteHeader__topLevelLink" data-reactid=".14x191bsz5s.1.0.4.1.0">Join</a></li></ul><div class="siteHeader__topLevelItem siteHeader__topLevelItem--signUp" data-reactid=".14x191bsz5s.1.0.5"><a href="/user/sign_up" class="gr-button gr-button--dark" rel="nofollow" data-reactid=".14x191bsz5s.1.0.5.0">Sign up</a></div><div class="modal modal--overlay modal--drawer" tabindex="0" data-reactid=".14x191bsz5s.1.0.7"><div data-reactid=".14x191bsz5s.1.0.7.0"><div class="modal__close" data-reactid=".14x191bsz5s.1.0.7.0.0"><button type="button" class="gr-iconButton" data-reactid=".14x191bsz5s.1.0.7.0.0.0"><img alt="Dismiss" src="//s.gr-assets.com/assets/gr/icons/icon_close_white-dbf4152deeef5bd3915d5d12210bf05f.svg" data-reactid=".14x191bsz5s.1.0.7.0.0.0.0"/></button></div><div class="modal__content" data-reactid=".14x191bsz5s.1.0.7.0.1"><div class="personalNavDrawer" data-reactid=".14x191bsz5s.1.0.7.0.1.0"><div class="personalNavDrawer__personalNavContainer" data-reactid=".14x191bsz5s.1.0.7.0.1.0.0"><ul class="personalNav" data-reactid=".14x191bsz5s.1.0.7.0.1.0.0.0"><li class="personalNav__listItem" data-reactid=".14x191bsz5s.1.0.7.0.1.0.0.0.0"><a class="headerPersonalNav" data-reactid=".14x191bsz5s.1.0.7.0.1.0.0.0.0.0"><span class="headerPersonalNav__icon
+                       headerPersonalNav__icon--notifications" aria-label="Notifications" data-reactid=".14x191bsz5s.1.0.7.0.1.0.0.0.0.0.0"></span></a></li><li class="personalNav__listItem" data-reactid=".14x191bsz5s.1.0.7.0.1.0.0.0.1"><a href="/topic?ref=nav_bar_discussions_pane_discussion&amp;discussion_filter=groups" title="My group discussions" class="headerPersonalNav" data-reactid=".14x191bsz5s.1.0.7.0.1.0.0.0.1.0"><span class="headerPersonalNav__icon headerPersonalNav__icon--discussions" aria-label="My group discussions" data-reactid=".14x191bsz5s.1.0.7.0.1.0.0.0.1.0.0"></span></a></li><li class="personalNav__listItem" data-reactid=".14x191bsz5s.1.0.7.0.1.0.0.0.2"><a title="Messages" class="headerPersonalNav" data-reactid=".14x191bsz5s.1.0.7.0.1.0.0.0.2.0"><span class="headerPersonalNav__icon headerPersonalNav__icon--inbox" aria-label="Inbox" data-reactid=".14x191bsz5s.1.0.7.0.1.0.0.0.2.0.0"></span></a></li><li class="personalNav__listItem" data-reactid=".14x191bsz5s.1.0.7.0.1.0.0.0.3"><a title="Friends" class="headerPersonalNav" data-reactid=".14x191bsz5s.1.0.7.0.1.0.0.0.3.0"><span class="headerPersonalNav__icon headerPersonalNav__icon--friendRequests" aria-label="Friend Requests" data-reactid=".14x191bsz5s.1.0.7.0.1.0.0.0.3.0.0"></span></a></li></ul></div><div class="personalNavDrawer__profileAndLinksContainer" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1"><div class="personalNavDrawer__profileContainer gr-mediaFlexbox gr-mediaFlexbox--alignItemsCenter" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.0"><div class="gr-mediaFlexbox__media" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.0.0"><img class="circularIcon circularIcon--large circularIcon--border" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.0.0.0"/></div><div class="gr-mediaFlexbox__desc" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.0.1"><a class="gr-hyperlink gr-hyperlink--bold" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.0.1.0"></a><div class="u-displayBlock" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.0.1.1"><a class="gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.0.1.1.0">View profile</a></div></div></div><div class="personalNavDrawer__profileMenuContainer" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1"><ul data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0"><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.0"><span data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.0.0"><a class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.0.0.0">Profile</a></span></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.2"><a class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.2.0">Friends</a></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.3"><span data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.3.0"><a class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.3.0.0"><span data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.3.0.0.0">Groups</span></a></span></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.4"><a href="/topic?ref=nav_comm_discuss" class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.4.0">Discussions</a></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.5"><a class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.5.0">Comments</a></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.6"><a class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.6.0">Reading Challenge</a></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.7"><a class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.7.0">Kindle Notes &amp; Highlights</a></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.8"><a class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.8.0">Quotes</a></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.9"><a class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.9.0">Favorite genres</a></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.a"><span data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.a.0"><a class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.a.0.0"><span data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.a.0.0.0">Friends’ recommendations</span></a></span></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.b"><a class="siteHeader__subNavLink u-topGrayBorder" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.b.0">Account settings</a></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.c"><a class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.c.0">Help</a></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.d"><a class="siteHeader__subNavLink" data-method="POST" data-reactid=".14x191bsz5s.1.0.7.0.1.0.1.1.0.d.0">Sign out</a></li></ul></div></div></div></div></div></div></div></div><div class="headroom-wrapper" data-reactid=".14x191bsz5s.2"><div style="position:relative;top:0;left:0;right:0;z-index:1;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);" class="headroom headroom--unfixed" data-reactid=".14x191bsz5s.2.0"><nav class="siteHeader__primaryNavSeparateLine gr-box gr-box--withShadow" data-reactid=".14x191bsz5s.2.0.0"><ul role="menu" class="siteHeader__menuList" data-reactid=".14x191bsz5s.2.0.0.0"><li class="siteHeader__topLevelItem siteHeader__topLevelItem--home" data-reactid=".14x191bsz5s.2.0.0.0.0"><a href="/?ref=nav_home" class="siteHeader__topLevelLink" data-reactid=".14x191bsz5s.2.0.0.0.0.0">Home</a></li><li class="siteHeader__topLevelItem" data-reactid=".14x191bsz5s.2.0.0.0.1"><a href="/review/list?ref=nav_mybooks" class="siteHeader__topLevelLink" data-reactid=".14x191bsz5s.2.0.0.0.1.0">My Books</a></li><li class="siteHeader__topLevelItem" data-reactid=".14x191bsz5s.2.0.0.0.2"><div class="primaryNavMenu primaryNavMenu--siteHeaderBrowseMenu ignore-react-onclickoutside" data-reactid=".14x191bsz5s.2.0.0.0.2.0"><a class="primaryNavMenu__trigger primaryNavMenu__trigger--siteHeaderBrowseMenu" href="/book?ref=nav_brws" role="button" aria-haspopup="true" aria-expanded="false" data-ux-click="true" data-reactid=".14x191bsz5s.2.0.0.0.2.0.0"><span data-reactid=".14x191bsz5s.2.0.0.0.2.0.0.0">Browse ▾</span></a><div class="primaryNavMenu__menu gr-box gr-box--withShadowLarge wide" role="menu" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1"><div class="siteHeader__browseMenuDropdown" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0"><ul class="siteHeader__subNav" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.0"><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.0.0"><a href="/recommendations?ref=nav_brws_recs" class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.0.0.0">Recommendations</a></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.0.1"><a href="/choiceawards?ref=nav_brws_gca" class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.0.1.0">Choice Awards</a></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.0.2"><a href="/genres?ref=nav_brws_genres" class="siteHeader__subNavLink siteHeader__subNavLink--genresIndex" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.0.2.0">Genres</a></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.0.3"><a href="/giveaway?ref=nav_brws_giveaways" class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.0.3.0">Giveaways</a></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.0.4"><a href="/book/popular_by_date/2020/11?ref=nav_brws_newrels" class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.0.4.0">New Releases</a></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.0.5"><a href="/list?ref=nav_brws_lists" class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.0.5.0">Lists</a></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.0.6"><a href="/book?ref=nav_brws_explore" class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.0.6.0">Explore</a></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.0.7"><a href="/news?ref=nav_brws_news" class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.0.7.0">News &amp; Interviews</a></li></ul><div class="siteHeader__spotlight siteHeader__spotlight--withoutSubMenu" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1"><div class="genreListContainer" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0"><div class="siteHeader__heading siteHeader__title" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.0">Genres</div><ul class="genreList" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList0"><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList0.0:$Art"><a href="/genres/art" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList0.0:$Art.0">Art</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList0.0:$Biography"><a href="/genres/biography" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList0.0:$Biography.0">Biography</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList0.0:$Business"><a href="/genres/business" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList0.0:$Business.0">Business</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList0.0:$Children&#x27;s"><a href="/genres/children-s" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList0.0:$Children&#x27;s.0">Children&#x27;s</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList0.0:$Christian"><a href="/genres/christian" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList0.0:$Christian.0">Christian</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList0.0:$Classics"><a href="/genres/classics" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList0.0:$Classics.0">Classics</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList0.0:$Comics"><a href="/genres/comics" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList0.0:$Comics.0">Comics</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList0.0:$Cookbooks"><a href="/genres/cookbooks" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList0.0:$Cookbooks.0">Cookbooks</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList0.0:$Ebooks"><a href="/genres/ebooks" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList0.0:$Ebooks.0">Ebooks</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList0.0:$Fantasy"><a href="/genres/fantasy" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList0.0:$Fantasy.0">Fantasy</a></li></ul><ul class="genreList" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList1"><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList1.0:$Fiction"><a href="/genres/fiction" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList1.0:$Fiction.0">Fiction</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList1.0:$Graphic Novels"><a href="/genres/graphic-novels" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList1.0:$Graphic Novels.0">Graphic Novels</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList1.0:$Historical Fiction"><a href="/genres/historical-fiction" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList1.0:$Historical Fiction.0">Historical Fiction</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList1.0:$History"><a href="/genres/history" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList1.0:$History.0">History</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList1.0:$Horror"><a href="/genres/horror" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList1.0:$Horror.0">Horror</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList1.0:$Memoir"><a href="/genres/memoir" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList1.0:$Memoir.0">Memoir</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList1.0:$Music"><a href="/genres/music" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList1.0:$Music.0">Music</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList1.0:$Mystery"><a href="/genres/mystery" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList1.0:$Mystery.0">Mystery</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList1.0:$Nonfiction"><a href="/genres/non-fiction" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList1.0:$Nonfiction.0">Nonfiction</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList1.0:$Poetry"><a href="/genres/poetry" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList1.0:$Poetry.0">Poetry</a></li></ul><ul class="genreList" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList2"><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList2.0:$Psychology"><a href="/genres/psychology" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList2.0:$Psychology.0">Psychology</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList2.0:$Romance"><a href="/genres/romance" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList2.0:$Romance.0">Romance</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList2.0:$Science"><a href="/genres/science" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList2.0:$Science.0">Science</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList2.0:$Science Fiction"><a href="/genres/science-fiction" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList2.0:$Science Fiction.0">Science Fiction</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList2.0:$Self Help"><a href="/genres/self-help" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList2.0:$Self Help.0">Self Help</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList2.0:$Sports"><a href="/genres/sports" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList2.0:$Sports.0">Sports</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList2.0:$Thriller"><a href="/genres/thriller" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList2.0:$Thriller.0">Thriller</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList2.0:$Travel"><a href="/genres/travel" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList2.0:$Travel.0">Travel</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList2.0:$Young Adult"><a href="/genres/young-adult" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList2.0:$Young Adult.0">Young Adult</a></li><li role="menuitem" class="genreList__genre" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList2.1"><a href="/genres" class="genreList__genreLink gr-hyperlink gr-hyperlink--naked" data-reactid=".14x191bsz5s.2.0.0.0.2.0.1.0.1.0.1:$genreList2.1.0">More Genres</a></li></ul></div></div></div></div></div></li><li class="siteHeader__topLevelItem siteHeader__topLevelItem--community" data-reactid=".14x191bsz5s.2.0.0.0.3"><div class="primaryNavMenu ignore-react-onclickoutside" data-reactid=".14x191bsz5s.2.0.0.0.3.0"><a class="primaryNavMenu__trigger" href="/group?ref=nav_comm" role="button" aria-haspopup="true" aria-expanded="false" data-ux-click="true" data-reactid=".14x191bsz5s.2.0.0.0.3.0.0"><span data-reactid=".14x191bsz5s.2.0.0.0.3.0.0.0">Community ▾</span></a><div class="primaryNavMenu__menu gr-box gr-box--withShadowLarge" role="menu" data-reactid=".14x191bsz5s.2.0.0.0.3.0.1"><ul class="siteHeader__subNav" data-reactid=".14x191bsz5s.2.0.0.0.3.0.1.0"><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.2.0.0.0.3.0.1.0.0"><a href="/group?ref=nav_comm_groups" class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.2.0.0.0.3.0.1.0.0.0">Groups</a></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.2.0.0.0.3.0.1.0.1"><a href="/topic?ref=nav_comm_discuss" class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.2.0.0.0.3.0.1.0.1.0">Discussions</a></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.2.0.0.0.3.0.1.0.2"><a href="/quotes?ref=nav_comm_quotes" class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.2.0.0.0.3.0.1.0.2.0">Quotes</a></li><li role="menuitem" class="menuLink" data-reactid=".14x191bsz5s.2.0.0.0.3.0.1.0.3"><a href="/ask_the_author?ref=nav_comm_askauthor" class="siteHeader__subNavLink" data-reactid=".14x191bsz5s.2.0.0.0.3.0.1.0.3.0">Ask the Author</a></li></ul></div></div></li></ul></nav></div></div></header></div>
+</div>
+<div class='siteHeaderBottomSpacer'></div>
+
+  
+
+  <div class="mainContentContainer ">
+
+
+      
+
+    <div class="mainContent ">
+        <div id="premiumAdTop">
+
+          <div data-react-class="ReactComponents.GoogleBannerAd" data-react-props="{&quot;adId&quot;:&quot;&quot;,&quot;className&quot;:&quot;googleBannerAd--pushdown&quot;}"></div>
+
+        </div>
+      
+      <div class="mainContentFloat ">
+
+        <div id="flashContainer">
+
+
+
+
+</div>
+
+        
+<h1>Popular Quotes</h1>
+<div class="leftContainer">
+  <div class="quoteSearchBox u-marginBottomMedium">
+    
+<form name="quoteSearchForm" class="gr-form gr-form--compact gr-form--fullWidth" action="/quotes/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+	<input type="text" name="q" id="explore_search_query" placeholder="Find quotes by keyword, author" class="searchBox--large__input" />
+	<input type="submit" name="commit" value="Search" class="searchBox__button searchBox--large__button" />
+</form>
+	</div>
+  <div class="tabs mediumTabs">
+  <span url="/quotes" id="popularLink" class=" selectedTab">Popular</span>
+  <a id="recentLink" class=" tab" href="/quotes/recently_added">Recent</a>
+  <a id="newLink" class=" tab" href="/quotes/recently_created">New</a>
+  <a rel="nofollow" id="friendsLink" class=" tab" href="/quotes/friend_quotes">Friends</a>
+  <a rel="nofollow" id="my_authorsLink" class=" tab" href="/quotes/my_authors">My Authors</a>
+<div class="clear"> </div></div><script type="text/javascript" charset="utf-8">
+//<![CDATA[
+
+  current_tabs[415754645] = 'popular';
+
+  Event.observe(window, 'load', function(e) {
+    // Switch to an anchored tab if specified in the URL
+    if (location.href.include('#')) {
+      var tabID = location.href.split('#')[1];
+      if (tabID != '' && $(tabID)) {
+        changeTab(tabID)
+      }
+    }
+  })
+//]]>
+</script>
+
+
+	<div class="mediumText">
+		Quotes popular among Goodreads members
+	</div>
+
+	<br/>
+	<div class="quotes">
+            <div class='quote'>
+<div class='quoteDetails'>
+    <a class="leftAlignedImage" href="https://images.gr-assets.com/quotes/1511992603p8/8630.jpg">
+      <img alt="I&#39;m selfish, impatient and a little insecure. I make mistakes, I am out of control" src="https://images.gr-assets.com/quotes/1511992603p2/8630.jpg" />
+</a>
+<div class="quoteText">
+      &ldquo;I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    Marilyn Monroe
+  </span>
+</div>
+
+
+<div class="quoteFooter">
+   <div class="greyText smallText left">
+     tags:
+       <a href="/quotes/tag/attributed-no-source">attributed-no-source</a>,
+       <a href="/quotes/tag/best">best</a>,
+       <a href="/quotes/tag/life">life</a>,
+       <a href="/quotes/tag/love">love</a>,
+       <a href="/quotes/tag/mistakes">mistakes</a>,
+       <a href="/quotes/tag/out-of-control">out-of-control</a>,
+       <a href="/quotes/tag/truth">truth</a>,
+       <a href="/quotes/tag/worst">worst</a>
+   </div>
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/8630-i-m-selfish-impatient-and-a-little-insecure-i-make-mistakes">153010 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+              <div data-react-class="ReactComponents.NativeAd" data-react-props="{&quot;adId&quot;:&quot;&quot;,&quot;className&quot;:&quot;googleNativeAd--quotesPage&quot;,&quot;isMobile&quot;:false,&quot;isNewsfeed&quot;:false,&quot;signedIn&quot;:false,&quot;allowBehavioralTargeting&quot;:null,&quot;trackingOptions&quot;:{&quot;enableTracking&quot;:true,&quot;adId&quot;:&quot;&quot;}}"></div>
+            <div class='quote'>
+<div class='quoteDetails'>
+    <a class="leftAlignedImage" href="/author/show/3565.Oscar_Wilde">
+      <img alt="Oscar Wilde" src="https://images.gr-assets.com/authors/1521044377p2/3565.jpg" />
+</a>
+<div class="quoteText">
+      &ldquo;Be yourself; everyone else is already taken.&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    Oscar Wilde
+  </span>
+</div>
+
+
+<div class="quoteFooter">
+   <div class="greyText smallText left">
+     tags:
+       <a href="/quotes/tag/attributed-no-source">attributed-no-source</a>,
+       <a href="/quotes/tag/be-yourself">be-yourself</a>,
+       <a href="/quotes/tag/honesty">honesty</a>,
+       <a href="/quotes/tag/inspirational">inspirational</a>,
+       <a href="/quotes/tag/misattributed-oscar-wilde">misattributed-oscar-wilde</a>
+   </div>
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/19884-be-yourself-everyone-else-is-already-taken">152524 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+            <div class='quote'>
+<div class='quoteDetails'>
+    <a class="leftAlignedImage" href="/author/show/9810.Albert_Einstein">
+      <img alt="Albert Einstein" src="https://images.gr-assets.com/authors/1429114964p2/9810.jpg" />
+</a>
+<div class="quoteText">
+      &ldquo;Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    Albert Einstein
+  </span>
+</div>
+
+
+<div class="quoteFooter">
+   <div class="greyText smallText left">
+     tags:
+       <a href="/quotes/tag/attributed-no-source">attributed-no-source</a>,
+       <a href="/quotes/tag/human-nature">human-nature</a>,
+       <a href="/quotes/tag/humor">humor</a>,
+       <a href="/quotes/tag/infinity">infinity</a>,
+       <a href="/quotes/tag/philosophy">philosophy</a>,
+       <a href="/quotes/tag/science">science</a>,
+       <a href="/quotes/tag/stupidity">stupidity</a>,
+       <a href="/quotes/tag/universe">universe</a>
+   </div>
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/942-two-things-are-infinite-the-universe-and-human-stupidity-and">134582 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+            <div class='quote'>
+<div class='quoteDetails'>
+    <a class="leftAlignedImage" href="/author/show/22302.Frank_Zappa">
+      <img alt="Frank Zappa" src="https://images.gr-assets.com/authors/1315160559p2/22302.jpg" />
+</a>
+<div class="quoteText">
+      &ldquo;So many books, so little time.&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    Frank Zappa
+  </span>
+</div>
+
+
+<div class="quoteFooter">
+   <div class="greyText smallText left">
+     tags:
+       <a href="/quotes/tag/books">books</a>,
+       <a href="/quotes/tag/humor">humor</a>
+   </div>
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/66-so-many-books-so-little-time">130938 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+            <div class='quote'>
+<div class='quoteDetails'>
+    <a class="leftAlignedImage" href="/author/show/13755.Marcus_Tullius_Cicero">
+      <img alt="Marcus Tullius Cicero" src="https://images.gr-assets.com/authors/1197881416p2/13755.jpg" />
+</a>
+<div class="quoteText">
+      &ldquo;A room without books is like a body without a soul.&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    Marcus Tullius Cicero
+  </span>
+</div>
+
+
+<div class="quoteFooter">
+   <div class="greyText smallText left">
+     tags:
+       <a href="/quotes/tag/attributed-no-source">attributed-no-source</a>,
+       <a href="/quotes/tag/books">books</a>,
+       <a href="/quotes/tag/simile">simile</a>,
+       <a href="/quotes/tag/soul">soul</a>
+   </div>
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/764-a-room-without-books-is-like-a-body-without-a">122551 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+            <div class='quote'>
+<div class='quoteDetails'>
+    <a class="leftAlignedImage" href="/author/show/5768330.Bernard_M_Baruch">
+      <img alt="Bernard M. Baruch" src="https://images.gr-assets.com/authors/1331977133p2/5768330.jpg" />
+</a>
+<div class="quoteText">
+      &ldquo;Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    Bernard M. Baruch
+  </span>
+</div>
+
+
+<div class="quoteFooter">
+   <div class="greyText smallText left">
+     tags:
+       <a href="/quotes/tag/ataraxy">ataraxy</a>,
+       <a href="/quotes/tag/be-yourself">be-yourself</a>,
+       <a href="/quotes/tag/confidence">confidence</a>,
+       <a href="/quotes/tag/fitting-in">fitting-in</a>,
+       <a href="/quotes/tag/individuality">individuality</a>,
+       <a href="/quotes/tag/misattributed-dr-seuss">misattributed-dr-seuss</a>,
+       <a href="/quotes/tag/those-who-matter">those-who-matter</a>
+   </div>
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/865-be-who-you-are-and-say-what-you-feel-because">122434 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+            <div class='quote'>
+<div class='quoteDetails'>
+    <a class="leftAlignedImage" href="/author/show/1744830.William_W_Purkey">
+      <img alt="William W. Purkey" src="https://images.gr-assets.com/authors/1282396130p2/1744830.jpg" />
+</a>
+<div class="quoteText">
+      &ldquo;You've gotta dance like there's nobody watching,<br />Love like you'll never be hurt,<br />Sing like there's nobody listening,<br />And live like it's heaven on earth.&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    William W. Purkey
+  </span>
+</div>
+
+
+<div class="quoteFooter">
+   <div class="greyText smallText left">
+     tags:
+       <a href="/quotes/tag/dance">dance</a>,
+       <a href="/quotes/tag/heaven">heaven</a>,
+       <a href="/quotes/tag/hurt">hurt</a>,
+       <a href="/quotes/tag/inspirational">inspirational</a>,
+       <a href="/quotes/tag/life">life</a>,
+       <a href="/quotes/tag/love">love</a>,
+       <a href="/quotes/tag/sing">sing</a>
+   </div>
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/10123-you-ve-gotta-dance-like-there-s-nobody-watching-love-like-you-ll">120292 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+            <div class='quote'>
+<div class='quoteDetails'>
+    <a class="leftAlignedImage" href="/author/show/61105.Dr_Seuss">
+      <img alt="Dr. Seuss" src="https://images.gr-assets.com/authors/1193930952p2/61105.jpg" />
+</a>
+<div class="quoteText">
+      &ldquo;You know you're in love when you can't fall asleep because reality is finally better than your dreams.&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    Dr. Seuss
+  </span>
+</div>
+
+
+<div class="quoteFooter">
+   <div class="greyText smallText left">
+     tags:
+       <a href="/quotes/tag/attributed-no-source">attributed-no-source</a>,
+       <a href="/quotes/tag/dreams">dreams</a>,
+       <a href="/quotes/tag/love">love</a>,
+       <a href="/quotes/tag/reality">reality</a>,
+       <a href="/quotes/tag/sleep">sleep</a>
+   </div>
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/7901-you-know-you-re-in-love-when-you-can-t-fall-asleep">117018 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+            <div class='quote'>
+<div class='quoteDetails'>
+    <a class="leftAlignedImage" href="/author/show/259666.Mae_West">
+      <img alt="Mae West" src="https://images.gr-assets.com/authors/1198551937p2/259666.jpg" />
+</a>
+<div class="quoteText">
+      &ldquo;You only live once, but if you do it right, once is enough.&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    Mae West
+  </span>
+</div>
+
+
+<div class="quoteFooter">
+   <div class="greyText smallText left">
+     tags:
+       <a href="/quotes/tag/humor">humor</a>,
+       <a href="/quotes/tag/life">life</a>
+   </div>
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/1598-you-only-live-once-but-if-you-do-it-right">109774 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+            <div class='quote'>
+<div class='quoteDetails'>
+    <a class="leftAlignedImage" href="/author/show/5810891.Mahatma_Gandhi">
+      <img alt="Mahatma Gandhi" src="https://images.gr-assets.com/authors/1356810912p2/5810891.jpg" />
+</a>
+<div class="quoteText">
+      &ldquo;Be the change that you wish to see in the world.&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    Mahatma Gandhi
+  </span>
+</div>
+
+
+<div class="quoteFooter">
+   <div class="greyText smallText left">
+     tags:
+       <a href="/quotes/tag/action">action</a>,
+       <a href="/quotes/tag/change">change</a>,
+       <a href="/quotes/tag/inspirational">inspirational</a>,
+       <a href="/quotes/tag/philosophy">philosophy</a>,
+       <a href="/quotes/tag/wish">wish</a>
+   </div>
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/24499-be-the-change-that-you-wish-to-see-in-the">108130 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+            <div class='quote'>
+<div class='quoteDetails'>
+    <a class="leftAlignedImage" href="/author/show/7715.Robert_Frost">
+      <img alt="Robert Frost" src="https://images.gr-assets.com/authors/1605640483p2/7715.jpg" />
+</a>
+<div class="quoteText">
+      &ldquo;In three words I can sum up everything I've learned about life: it goes on.&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    Robert Frost
+  </span>
+</div>
+
+
+<div class="quoteFooter">
+   <div class="greyText smallText left">
+     tags:
+       <a href="/quotes/tag/life">life</a>
+   </div>
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/258-in-three-words-i-can-sum-up-everything-i-ve-learned">102352 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+            <div class='quote'>
+<div class='quoteDetails'>
+    <a class="leftAlignedImage" href="/author/show/1077326.J_K_Rowling">
+      <img alt="J.K. Rowling" src="https://images.gr-assets.com/authors/1596216614p2/1077326.jpg" />
+</a>
+<div class="quoteText">
+      &ldquo;If you want to know what a man's like, take a good look at how he treats his inferiors, not his equals.&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    J.K. Rowling,
+  </span>
+    <span id=quote_book_link_6>
+      <a class="authorOrTitle" href="/work/quotes/3046572">Harry Potter and the Goblet of Fire</a>
+    </span>
+    
+
+  
+<script type="text/javascript" charset="utf-8">
+//<![CDATA[  
+
+  function submitShelfLink(unique_id, book_id, shelf_id, shelf_name, submit_form, exclusive) {
+    var checkbox_id = 'shelf_name_' + unique_id + '_' + shelf_id;
+    var element = document.getElementById(checkbox_id)
+
+    var checked = element.checked
+    if (checked && exclusive) {
+      // can't uncheck a radio by clicking it!
+      return
+    }
+    if(document.getElementById("savingMessage")){
+      Element.show('savingMessage')
+    }
+    var element_id = 'shelfInDropdownName_' + unique_id + '_' + shelf_id;
+    Element.update(element_id, "saving...");
+    if (submit_form) {
+      Element.hide('shelfDropdown_' + unique_id)
+      var form = document.getElementById('addBookForm' + book_id)
+      if (form) {
+        form.shelf.value = shelf_name
+        form.onsubmit()
+      }
+    }
+    else {
+      var action = checked ? 'remove' : ''
+      element.checked = !element.checked
+      new Ajax.Request('/shelf/add_to_shelf', {asynchronous:true, evalScripts:true, onSuccess:function(request){shelfSubmitted(request, book_id, checkbox_id, element_id, unique_id, shelf_name)}, parameters:'book_id=' + book_id + '&name=' + shelf_name + '&a=' + action + '&authenticity_token=' + encodeURIComponent('m/csmvXfbWdnrAgfxTVPzAEqHL48ced1BWJHj4W6QfltWjZ4jPvSExS22iaVn6GhAZbdeRLMUekLTmCGQJYfzQ==')})
+    }
+  }
+
+  function shelfSubmitted(request, book_id, checkbox_id, element_id, unique_id, shelf_name) {
+    Element.update('shelfListfalse_' + book_id, request.responseText)
+    afterShelfSave(checkbox_id, element_id, unique_id, shelf_name.escapeHTML())
+  }
+
+  function refreshGroupBox(group_id, book_id) {
+    new Ajax.Updater('addGroupBooks' + book_id + '', '/group/add_book_box', {asynchronous:true, evalScripts:true, onSuccess:function(request){refreshGroupBoxComplete(request, book_id);}, parameters:'id=' + group_id + '&book_id=' + book_id + '&refresh=true' + '&authenticity_token=' + encodeURIComponent('Dzs1evuUMYoUs/0VsFsHMeART999OqapomEar9YjEv75li+YgrCO/mepLyzg8elc4K2OGFOHEDWsTT2mEw9Myg==')})
+  }
+//]]>
+</script>
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('quote_book_link_6'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/6.Harry_Potter_and_the_Goblet_of_Fire?from_choice=false&amp;from_home_module=false\">Harry Potter and the Goblet of Fire (Harry Potter, #4)<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/1077326.J_K_Rowling\">J.K. Rowling<\/a>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p6\"><\/span><\/span> 4.56 avg rating &mdash; 2,619,712 ratings<\/span>            &mdash; published 2000\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer5322110303011026941\">Harry Potter is midway through his training as a wizard and his coming of age. Harry wants to get away from the pernicious Dursleys and go to the International Quidditch Cup with Hermione, Ron, and the Weasleys. He wants to dream about Cho Chang, his<\/span>\n  <span id=\"freeText5322110303011026941\" style=\"display:none\">Harry Potter is midway through his training as a wizard and his coming of age. Harry wants to get away from the pernicious Dursleys and go to the International Quidditch Cup with Hermione, Ron, and the Weasleys. He wants to dream about Cho Chang, his crush (and maybe do more than dream). He wants to find out about the mysterious event that\'s supposed to take place at Hogwarts this year, an event involving two other rival schools of magic, and a competition that hasn\'t happened for hundreds of years. He wants to be a normal, fourteen-year-old wizard. But unfortunately for Harry Potter, he\'s not normal - even by wizarding standards.And in his case, different can be deadly.<\/span>\n  <a data-text-id=\"5322110303011026941\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n      <div class=\'wtrButtonContainer wtrSignedOut\' id=\'1_book_6\'>\n<div class=\'wtrUp wtrLeft\'>\n<form action=\"/shelf/add_to_shelf\" accept-charset=\"UTF-8\" method=\"post\"><input name=\"utf8\" type=\"hidden\" value=\"&#x2713;\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"TZumgADDKS63gFTxYJC3JqhzGva1fkRxCLFCMjzizOi7NrxieeeWWsSahsgwOllLqM/bMZvD8u0GnWU7+c6S3A==\" />\n<input type=\"hidden\" name=\"book_id\" id=\"book_id\" value=\"6\" />\n<input type=\"hidden\" name=\"name\" id=\"name\" value=\"to-read\" />\n<input type=\"hidden\" name=\"unique_id\" id=\"unique_id\" value=\"1_book_6\" />\n<input type=\"hidden\" name=\"wtr_new\" id=\"wtr_new\" value=\"true\" />\n<input type=\"hidden\" name=\"from_choice\" id=\"from_choice\" value=\"false\" />\n<input type=\"hidden\" name=\"from_home_module\" id=\"from_home_module\" value=\"false\" />\n<input type=\"hidden\" name=\"ref\" id=\"ref\" value=\"\" class=\"wtrLeftUpRef\" />\n<input type=\"hidden\" name=\"existing_review\" id=\"existing_review\" value=\"false\" class=\"wtrExisting\" />\n<input type=\"hidden\" name=\"page_url\" id=\"page_url\" value=\"/quotes\" />\n<button class=\'wtrToRead\' type=\'submit\'>\n<span class=\'progressTrigger\'>Want to Read<\/span>\n<span class=\'progressIndicator\'>saving…<\/span>\n<\/button>\n<\/form>\n\n<\/div>\n\n<div class=\'wtrRight wtrUp\'>\n<form class=\"hiddenShelfForm\" action=\"/shelf/add_to_shelf\" accept-charset=\"UTF-8\" method=\"post\"><input name=\"utf8\" type=\"hidden\" value=\"&#x2713;\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"wHZzTg6td0nfE2TpEAd9PcAsdQwKTG3TSdhkMMVRdYU222msd4nIPawJttBArZNQwJC0yyTx209H9EM5AH0rsQ==\" />\n<input type=\"hidden\" name=\"unique_id\" id=\"unique_id\" value=\"1_book_6\" />\n<input type=\"hidden\" name=\"book_id\" id=\"book_id\" value=\"6\" />\n<input type=\"hidden\" name=\"a\" id=\"a\" />\n<input type=\"hidden\" name=\"name\" id=\"name\" />\n<input type=\"hidden\" name=\"from_choice\" id=\"from_choice\" value=\"false\" />\n<input type=\"hidden\" name=\"from_home_module\" id=\"from_home_module\" value=\"false\" />\n<input type=\"hidden\" name=\"page_url\" id=\"page_url\" value=\"/quotes\" />\n<\/form>\n\n<button class=\'wtrShelfButton\'><\/button>\n<div class=\'wtrShelfMenu\'>\n<ul class=\'wtrExclusiveShelves\'>\n<li><button class=\'wtrExclusiveShelf\' name=\'name\' type=\'submit\' value=\'to-read\'>\n<span class=\'progressTrigger\'>Want to Read<\/span>\n<img alt=\"saving…\" class=\"progressIndicator\" src=\"https://s.gr-assets.com/assets/loading-trans-ced157046184c3bc7c180ffbfc6825a4.gif\" />\n<\/button>\n<\/li>\n<li><button class=\'wtrExclusiveShelf\' name=\'name\' type=\'submit\' value=\'currently-reading\'>\n<span class=\'progressTrigger\'>Currently Reading<\/span>\n<img alt=\"saving…\" class=\"progressIndicator\" src=\"https://s.gr-assets.com/assets/loading-trans-ced157046184c3bc7c180ffbfc6825a4.gif\" />\n<\/button>\n<\/li>\n<li><button class=\'wtrExclusiveShelf\' name=\'name\' type=\'submit\' value=\'read\'>\n<span class=\'progressTrigger\'>Read<\/span>\n<img alt=\"saving…\" class=\"progressIndicator\" src=\"https://s.gr-assets.com/assets/loading-trans-ced157046184c3bc7c180ffbfc6825a4.gif\" />\n<\/button>\n<\/li>\n<\/ul>\n<\/div>\n<\/div>\n\n<div class=\'ratingStars wtrRating\'>\n<div class=\'starsErrorTooltip hidden\'>\nError rating book. Refresh and try again.\n<\/div>\n<div class=\'myRating uitext greyText\'>Rate this book<\/div>\n<div class=\'clearRating uitext\'>Clear rating<\/div>\n<div class=\"stars\" data-resource-id=\"6\" data-user-id=\"0\" data-submit-url=\"/review/rate/6?page_url=%2Fquotes&rate_books_page=false&stars_click=false&wtr_button_id=1_book_6\" data-rating=\"0\"><a class=\"star off\" title=\"did not like it\" href=\"#\" ref=\"\">1 of 5 stars<\/a><a class=\"star off\" title=\"it was ok\" href=\"#\" ref=\"\">2 of 5 stars<\/a><a class=\"star off\" title=\"liked it\" href=\"#\" ref=\"\">3 of 5 stars<\/a><a class=\"star off\" title=\"really liked it\" href=\"#\" ref=\"\">4 of 5 stars<\/a><a class=\"star off\" title=\"it was amazing\" href=\"#\" ref=\"\">5 of 5 stars<\/a><\/div>\n<\/div>\n\n<\/div>\n\n\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, offset: { x: 5, y: 0 }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('quote_book_link_6').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('quote_book_link_6').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('quote_book_link_6').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('quote_book_link_6').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+</div>
+
+
+<div class="quoteFooter">
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/5399-if-you-want-to-know-what-a-man-s-like-take">97501 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+            <div class='quote'>
+<div class='quoteDetails'>
+    <a class="leftAlignedImage" href="/author/show/957894.Albert_Camus">
+      <img alt="Albert Camus" src="https://images.gr-assets.com/authors/1606568448p2/957894.jpg" />
+</a>
+<div class="quoteText">
+      &ldquo;Don’t walk in front of me… I may not follow<br />Don’t walk behind me… I may not lead<br />Walk beside me… just be my friend&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    Albert Camus
+  </span>
+</div>
+
+
+<div class="quoteFooter">
+   <div class="greyText smallText left">
+     tags:
+       <a href="/quotes/tag/attributed-no-source">attributed-no-source</a>,
+       <a href="/quotes/tag/friends">friends</a>,
+       <a href="/quotes/tag/friendship">friendship</a>,
+       <a href="/quotes/tag/misattributed-albert-camus">misattributed-albert-camus</a>
+   </div>
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/54-don-t-walk-in-front-of-me-i-may-not-follow">87140 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+            <div class='quote'>
+<div class='quoteDetails'>
+    <a class="leftAlignedImage" href="/author/show/44566.Eleanor_Roosevelt">
+      <img alt="Eleanor Roosevelt" src="https://images.gr-assets.com/authors/1536173756p2/44566.jpg" />
+</a>
+<div class="quoteText">
+      &ldquo;No one can make you feel inferior without your consent.&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    Eleanor Roosevelt,
+  </span>
+    <span id=quote_book_link_5301304>
+      <a class="authorOrTitle" href="/work/quotes/5368741">This is My Story</a>
+    </span>
+    
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('quote_book_link_5301304'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/5301304-this-is-my-story?from_choice=false&amp;from_home_module=false\">This is My Story<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/44566.Eleanor_Roosevelt\">Eleanor Roosevelt<\/a>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p6\"><\/span><span size=\"12x12\" class=\"staticStar p0\"><\/span><\/span> 3.90 avg rating &mdash; 117 ratings<\/span>            &mdash; published 1939\n          <\/div>\n\n\n      <div class=\'wtrButtonContainer wtrSignedOut\' id=\'2_book_5301304\'>\n<div class=\'wtrUp wtrLeft\'>\n<form action=\"/shelf/add_to_shelf\" accept-charset=\"UTF-8\" method=\"post\"><input name=\"utf8\" type=\"hidden\" value=\"&#x2713;\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"GL/Nv1auTEuYdyj4mr8JpQqfTfM5k5010Fp0zfrmrSPuEtddL4rzP+tt+sHKFefICiOMNBcuK6nedlPEP8rzFw==\" />\n<input type=\"hidden\" name=\"book_id\" id=\"book_id\" value=\"5301304\" />\n<input type=\"hidden\" name=\"name\" id=\"name\" value=\"to-read\" />\n<input type=\"hidden\" name=\"unique_id\" id=\"unique_id\" value=\"2_book_5301304\" />\n<input type=\"hidden\" name=\"wtr_new\" id=\"wtr_new\" value=\"true\" />\n<input type=\"hidden\" name=\"from_choice\" id=\"from_choice\" value=\"false\" />\n<input type=\"hidden\" name=\"from_home_module\" id=\"from_home_module\" value=\"false\" />\n<input type=\"hidden\" name=\"ref\" id=\"ref\" value=\"\" class=\"wtrLeftUpRef\" />\n<input type=\"hidden\" name=\"existing_review\" id=\"existing_review\" value=\"false\" class=\"wtrExisting\" />\n<input type=\"hidden\" name=\"page_url\" id=\"page_url\" value=\"/quotes\" />\n<button class=\'wtrToRead\' type=\'submit\'>\n<span class=\'progressTrigger\'>Want to Read<\/span>\n<span class=\'progressIndicator\'>saving…<\/span>\n<\/button>\n<\/form>\n\n<\/div>\n\n<div class=\'wtrRight wtrUp\'>\n<form class=\"hiddenShelfForm\" action=\"/shelf/add_to_shelf\" accept-charset=\"UTF-8\" method=\"post\"><input name=\"utf8\" type=\"hidden\" value=\"&#x2713;\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"tROh/FNXpB0LUj9cFmOWkskC6gl3MY1EOpnyvzrOHPBDvrseKnMbaXhI7WVGyXj/yb4rzlmMO9g0tdW2/+JCxA==\" />\n<input type=\"hidden\" name=\"unique_id\" id=\"unique_id\" value=\"2_book_5301304\" />\n<input type=\"hidden\" name=\"book_id\" id=\"book_id\" value=\"5301304\" />\n<input type=\"hidden\" name=\"a\" id=\"a\" />\n<input type=\"hidden\" name=\"name\" id=\"name\" />\n<input type=\"hidden\" name=\"from_choice\" id=\"from_choice\" value=\"false\" />\n<input type=\"hidden\" name=\"from_home_module\" id=\"from_home_module\" value=\"false\" />\n<input type=\"hidden\" name=\"page_url\" id=\"page_url\" value=\"/quotes\" />\n<\/form>\n\n<button class=\'wtrShelfButton\'><\/button>\n<\/div>\n\n<div class=\'ratingStars wtrRating\'>\n<div class=\'starsErrorTooltip hidden\'>\nError rating book. Refresh and try again.\n<\/div>\n<div class=\'myRating uitext greyText\'>Rate this book<\/div>\n<div class=\'clearRating uitext\'>Clear rating<\/div>\n<div class=\"stars\" data-resource-id=\"5301304\" data-user-id=\"0\" data-submit-url=\"/review/rate/5301304?page_url=%2Fquotes&rate_books_page=false&stars_click=false&wtr_button_id=2_book_5301304\" data-rating=\"0\"><a class=\"star off\" title=\"did not like it\" href=\"#\" ref=\"\">1 of 5 stars<\/a><a class=\"star off\" title=\"it was ok\" href=\"#\" ref=\"\">2 of 5 stars<\/a><a class=\"star off\" title=\"liked it\" href=\"#\" ref=\"\">3 of 5 stars<\/a><a class=\"star off\" title=\"really liked it\" href=\"#\" ref=\"\">4 of 5 stars<\/a><a class=\"star off\" title=\"it was amazing\" href=\"#\" ref=\"\">5 of 5 stars<\/a><\/div>\n<\/div>\n\n<\/div>\n\n\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, offset: { x: 5, y: 0 }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('quote_book_link_5301304').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('quote_book_link_5301304').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('quote_book_link_5301304').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('quote_book_link_5301304').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+</div>
+
+
+<div class="quoteFooter">
+   <div class="greyText smallText left">
+     tags:
+       <a href="/quotes/tag/confidence">confidence</a>,
+       <a href="/quotes/tag/inspirational">inspirational</a>,
+       <a href="/quotes/tag/wisdom">wisdom</a>
+   </div>
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/11035-no-one-can-make-you-feel-inferior-without-your-consent">87112 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+            <div class='quote'>
+<div class='quoteDetails'>
+    <a class="leftAlignedImage" href="/author/show/1244.Mark_Twain">
+      <img alt="Mark Twain" src="https://images.gr-assets.com/authors/1322103868p2/1244.jpg" />
+</a>
+<div class="quoteText">
+      &ldquo;If you tell the truth, you don't have to remember anything.&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    Mark Twain
+  </span>
+</div>
+
+
+<div class="quoteFooter">
+   <div class="greyText smallText left">
+     tags:
+       <a href="/quotes/tag/lies">lies</a>,
+       <a href="/quotes/tag/lying">lying</a>,
+       <a href="/quotes/tag/memory">memory</a>,
+       <a href="/quotes/tag/truth">truth</a>
+   </div>
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/9131-if-you-tell-the-truth-you-don-t-have-to-remember">85469 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+            <div class='quote'>
+<div class='quoteDetails'>
+    <a class="leftAlignedImage" href="https://images.gr-assets.com/quotes/1387503187p8/10554.jpg">
+      <img alt="Friendship ... is born at the moment when one man says to another What! You" src="https://images.gr-assets.com/quotes/1387503187p2/10554.jpg" />
+</a>
+<div class="quoteText">
+      &ldquo;Friendship ... is born at the moment when one man says to another "What! You too? I thought that no one but myself . . .&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    C.S. Lewis,
+  </span>
+    <span id=quote_book_link_30633>
+      <a class="authorOrTitle" href="/work/quotes/14816053">The Four Loves</a>
+    </span>
+    
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('quote_book_link_30633'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/30633.The_Four_Loves?from_choice=false&amp;from_home_module=false\">The Four Loves<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/1069006.C_S_Lewis\">C.S. Lewis<\/a>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p3\"><\/span><\/span> 4.14 avg rating &mdash; 44,133 ratings<\/span>            &mdash; published 1960\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer9741873783101656748\">The Four Loves summarizes four kinds of human love--affection, friendship, erotic love, and the love of God. Masterful without being magisterial, this book\'s wise, gentle, candid reflections on the virtues and dangers of love draw on sources from Jan<\/span>\n  <span id=\"freeText9741873783101656748\" style=\"display:none\">The Four Loves summarizes four kinds of human love--affection, friendship, erotic love, and the love of God. Masterful without being magisterial, this book\'s wise, gentle, candid reflections on the virtues and dangers of love draw on sources from Jane Austen to St. Augustine. The chapter on charity (love of God) may be the best thing Lewis ever wrote about Christianity. Consider his reflection on Augustine\'s teaching that one must love only God, because only God is eternal, and all earthly love will someday pass away:  Who could conceivably begin to love God on such a prudential ground--because the security (so to speak) is better? Who could even include it among the grounds for loving? Would you choose a wife or a Friend--if it comes to that, would you choose a dog--in this spirit? One must be outside the world of love, of all loves, before one thus calculates.  His description of Christianity here is no less forceful and opinionated than in Mere Christianity or The Problem of Pain, but it is far less anxious about its reader\'s response--and therefore more persuasive than any of his apologetics. When he begins to describe the nature of faith, Lewis writes: &quot;Take it as one man\'s reverie, almost one man\'s myth. If anything in it is useful to you, use it; if anything is not, never give it a second thought.&quot; --Michael Joseph Gross<\/span>\n  <a data-text-id=\"9741873783101656748\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n      <div class=\'wtrButtonContainer wtrSignedOut\' id=\'3_book_30633\'>\n<div class=\'wtrUp wtrLeft\'>\n<form action=\"/shelf/add_to_shelf\" accept-charset=\"UTF-8\" method=\"post\"><input name=\"utf8\" type=\"hidden\" value=\"&#x2713;\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"waC/zdX8wBOIEtJHlRXLzBlqyvkjZe2U7B/YvwXz9gc3DaUvrNh/Z/sIAH7FvyWhGdYLPg3YWwjiM/+2wN+oMw==\" />\n<input type=\"hidden\" name=\"book_id\" id=\"book_id\" value=\"30633\" />\n<input type=\"hidden\" name=\"name\" id=\"name\" value=\"to-read\" />\n<input type=\"hidden\" name=\"unique_id\" id=\"unique_id\" value=\"3_book_30633\" />\n<input type=\"hidden\" name=\"wtr_new\" id=\"wtr_new\" value=\"true\" />\n<input type=\"hidden\" name=\"from_choice\" id=\"from_choice\" value=\"false\" />\n<input type=\"hidden\" name=\"from_home_module\" id=\"from_home_module\" value=\"false\" />\n<input type=\"hidden\" name=\"ref\" id=\"ref\" value=\"\" class=\"wtrLeftUpRef\" />\n<input type=\"hidden\" name=\"existing_review\" id=\"existing_review\" value=\"false\" class=\"wtrExisting\" />\n<input type=\"hidden\" name=\"page_url\" id=\"page_url\" value=\"/quotes\" />\n<button class=\'wtrToRead\' type=\'submit\'>\n<span class=\'progressTrigger\'>Want to Read<\/span>\n<span class=\'progressIndicator\'>saving…<\/span>\n<\/button>\n<\/form>\n\n<\/div>\n\n<div class=\'wtrRight wtrUp\'>\n<form class=\"hiddenShelfForm\" action=\"/shelf/add_to_shelf\" accept-charset=\"UTF-8\" method=\"post\"><input name=\"utf8\" type=\"hidden\" value=\"&#x2713;\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"3tbDhYwhUSdwSwjY9qwBcMeonvjjJZZ8jsgbBBsBeCcoe9ln9QXuUwNR2uGmBu8dxxRfP82YIOCA5DwN3i0mEw==\" />\n<input type=\"hidden\" name=\"unique_id\" id=\"unique_id\" value=\"3_book_30633\" />\n<input type=\"hidden\" name=\"book_id\" id=\"book_id\" value=\"30633\" />\n<input type=\"hidden\" name=\"a\" id=\"a\" />\n<input type=\"hidden\" name=\"name\" id=\"name\" />\n<input type=\"hidden\" name=\"from_choice\" id=\"from_choice\" value=\"false\" />\n<input type=\"hidden\" name=\"from_home_module\" id=\"from_home_module\" value=\"false\" />\n<input type=\"hidden\" name=\"page_url\" id=\"page_url\" value=\"/quotes\" />\n<\/form>\n\n<button class=\'wtrShelfButton\'><\/button>\n<\/div>\n\n<div class=\'ratingStars wtrRating\'>\n<div class=\'starsErrorTooltip hidden\'>\nError rating book. Refresh and try again.\n<\/div>\n<div class=\'myRating uitext greyText\'>Rate this book<\/div>\n<div class=\'clearRating uitext\'>Clear rating<\/div>\n<div class=\"stars\" data-resource-id=\"30633\" data-user-id=\"0\" data-submit-url=\"/review/rate/30633?page_url=%2Fquotes&rate_books_page=false&stars_click=false&wtr_button_id=3_book_30633\" data-rating=\"0\"><a class=\"star off\" title=\"did not like it\" href=\"#\" ref=\"\">1 of 5 stars<\/a><a class=\"star off\" title=\"it was ok\" href=\"#\" ref=\"\">2 of 5 stars<\/a><a class=\"star off\" title=\"liked it\" href=\"#\" ref=\"\">3 of 5 stars<\/a><a class=\"star off\" title=\"really liked it\" href=\"#\" ref=\"\">4 of 5 stars<\/a><a class=\"star off\" title=\"it was amazing\" href=\"#\" ref=\"\">5 of 5 stars<\/a><\/div>\n<\/div>\n\n<\/div>\n\n\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, offset: { x: 5, y: 0 }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('quote_book_link_30633').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('quote_book_link_30633').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('quote_book_link_30633').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('quote_book_link_30633').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+</div>
+
+
+<div class="quoteFooter">
+   <div class="greyText smallText left">
+     tags:
+       <a href="/quotes/tag/friendship">friendship</a>
+   </div>
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/10554-friendship-is-born-at-the-moment-when-one-man">84913 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+            <div class='quote'>
+<div class='quoteDetails'>
+    <a class="leftAlignedImage" href="/author/show/3503.Maya_Angelou">
+      <img alt="Maya Angelou" src="https://images.gr-assets.com/authors/1379017377p2/3503.jpg" />
+</a>
+<div class="quoteText">
+      &ldquo;I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    Maya Angelou
+  </span>
+</div>
+
+
+<div class="quoteFooter">
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/5934-i-ve-learned-that-people-will-forget-what-you-said-people">80800 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+            <div class='quote'>
+<div class='quoteDetails'>
+    <a class="leftAlignedImage" href="/author/show/114059.Elbert_Hubbard">
+      <img alt="Elbert Hubbard" src="https://images.gr-assets.com/authors/1216826209p2/114059.jpg" />
+</a>
+<div class="quoteText">
+      &ldquo;A friend is someone who knows all about you and still loves you.&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    Elbert Hubbard
+  </span>
+</div>
+
+
+<div class="quoteFooter">
+   <div class="greyText smallText left">
+     tags:
+       <a href="/quotes/tag/friend">friend</a>,
+       <a href="/quotes/tag/friendship">friendship</a>,
+       <a href="/quotes/tag/knowledge">knowledge</a>,
+       <a href="/quotes/tag/love">love</a>
+   </div>
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/16949-a-friend-is-someone-who-knows-all-about-you-and">79485 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+            <div class='quote'>
+<div class='quoteDetails'>
+    <a class="leftAlignedImage" href="/author/show/3565.Oscar_Wilde">
+      <img alt="Oscar Wilde" src="https://images.gr-assets.com/authors/1521044377p2/3565.jpg" />
+</a>
+<div class="quoteText">
+      &ldquo;Always forgive your enemies; nothing annoys them so much.&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    Oscar Wilde
+  </span>
+</div>
+
+
+<div class="quoteFooter">
+   <div class="greyText smallText left">
+     tags:
+       <a href="/quotes/tag/attributed-no-source">attributed-no-source</a>,
+       <a href="/quotes/tag/enemies">enemies</a>,
+       <a href="/quotes/tag/forgiveness">forgiveness</a>,
+       <a href="/quotes/tag/strategy">strategy</a>
+   </div>
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/4583-always-forgive-your-enemies-nothing-annoys-them-so-much">76609 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+            <div class='quote'>
+<div class='quoteDetails'>
+    <a class="leftAlignedImage" href="/author/show/3565.Oscar_Wilde">
+      <img alt="Oscar Wilde" src="https://images.gr-assets.com/authors/1521044377p2/3565.jpg" />
+</a>
+<div class="quoteText">
+      &ldquo;To live is the rarest thing in the world. Most people exist, that is all.&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    Oscar Wilde
+  </span>
+</div>
+
+
+<div class="quoteFooter">
+   <div class="greyText smallText left">
+     tags:
+       <a href="/quotes/tag/life">life</a>
+   </div>
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/2448-to-live-is-the-rarest-thing-in-the-world-most">75522 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+            <div class='quote'>
+<div class='quoteDetails'>
+    <a class="leftAlignedImage" href="/author/show/5810891.Mahatma_Gandhi">
+      <img alt="Mahatma Gandhi" src="https://images.gr-assets.com/authors/1356810912p2/5810891.jpg" />
+</a>
+<div class="quoteText">
+      &ldquo;Live as if you were to die tomorrow. Learn as if you were to live forever.&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    Mahatma Gandhi
+  </span>
+</div>
+
+
+<div class="quoteFooter">
+   <div class="greyText smallText left">
+     tags:
+       <a href="/quotes/tag/carpe-diem">carpe-diem</a>,
+       <a href="/quotes/tag/education">education</a>,
+       <a href="/quotes/tag/inspirational">inspirational</a>,
+       <a href="/quotes/tag/learning">learning</a>
+   </div>
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/2253-live-as-if-you-were-to-die-tomorrow-learn-as">73807 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+            <div class='quote'>
+<div class='quoteDetails'>
+    <a class="leftAlignedImage" href="/author/show/23924.Martin_Luther_King_Jr_">
+      <img alt="Martin Luther King Jr." src="https://images.gr-assets.com/authors/1198518558p2/23924.jpg" />
+</a>
+<div class="quoteText">
+      &ldquo;Darkness cannot drive out darkness: only light can do that. Hate cannot drive out hate: only love can do that.&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    Martin Luther King Jr.,
+  </span>
+    <span id=quote_book_link_53360>
+      <a class="authorOrTitle" href="/work/quotes/52037">A Testament of Hope: The Essential Writings and Speeches</a>
+    </span>
+    
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('quote_book_link_53360'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/53360.A_Testament_of_Hope?from_choice=false&amp;from_home_module=false\">A Testament of Hope: The Essential Writings and Speeches<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/23924.Martin_Luther_King_Jr_\">Martin Luther King Jr.<\/a>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p6\"><\/span><\/span> 4.54 avg rating &mdash; 2,147 ratings<\/span>            &mdash; published 1986\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer1507325272555885990\">Here, in the only major one-volume collection of his writings, speeches, interviews, and autobiographical reflections, is Martin Luther King Jr. on non-violence, social policy, integration, black nationalism, the ethics of love and hope, and more.<\/span>\n\n    <\/div>\n\n      <div class=\'wtrButtonContainer wtrSignedOut\' id=\'4_book_53360\'>\n<div class=\'wtrUp wtrLeft\'>\n<form action=\"/shelf/add_to_shelf\" accept-charset=\"UTF-8\" method=\"post\"><input name=\"utf8\" type=\"hidden\" value=\"&#x2713;\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"PAzUkLP/GHZ6lt7OYIdQET+zTHTua03R52mxcgv9wEfKoc5yytunAgmMDPcwLb58Pw+Ns8DW+03pRZZ7ztGecw==\" />\n<input type=\"hidden\" name=\"book_id\" id=\"book_id\" value=\"53360\" />\n<input type=\"hidden\" name=\"name\" id=\"name\" value=\"to-read\" />\n<input type=\"hidden\" name=\"unique_id\" id=\"unique_id\" value=\"4_book_53360\" />\n<input type=\"hidden\" name=\"wtr_new\" id=\"wtr_new\" value=\"true\" />\n<input type=\"hidden\" name=\"from_choice\" id=\"from_choice\" value=\"false\" />\n<input type=\"hidden\" name=\"from_home_module\" id=\"from_home_module\" value=\"false\" />\n<input type=\"hidden\" name=\"ref\" id=\"ref\" value=\"\" class=\"wtrLeftUpRef\" />\n<input type=\"hidden\" name=\"existing_review\" id=\"existing_review\" value=\"false\" class=\"wtrExisting\" />\n<input type=\"hidden\" name=\"page_url\" id=\"page_url\" value=\"/quotes\" />\n<button class=\'wtrToRead\' type=\'submit\'>\n<span class=\'progressTrigger\'>Want to Read<\/span>\n<span class=\'progressIndicator\'>saving…<\/span>\n<\/button>\n<\/form>\n\n<\/div>\n\n<div class=\'wtrRight wtrUp\'>\n<form class=\"hiddenShelfForm\" action=\"/shelf/add_to_shelf\" accept-charset=\"UTF-8\" method=\"post\"><input name=\"utf8\" type=\"hidden\" value=\"&#x2713;\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"Kc4zCV08oFiIbzsBLHcLjs/f935r5A5Lc18KccrdIFffYynrJBgfLPt16Th83eXjz2M2uUVZuNd9cy14D/F+Yw==\" />\n<input type=\"hidden\" name=\"unique_id\" id=\"unique_id\" value=\"4_book_53360\" />\n<input type=\"hidden\" name=\"book_id\" id=\"book_id\" value=\"53360\" />\n<input type=\"hidden\" name=\"a\" id=\"a\" />\n<input type=\"hidden\" name=\"name\" id=\"name\" />\n<input type=\"hidden\" name=\"from_choice\" id=\"from_choice\" value=\"false\" />\n<input type=\"hidden\" name=\"from_home_module\" id=\"from_home_module\" value=\"false\" />\n<input type=\"hidden\" name=\"page_url\" id=\"page_url\" value=\"/quotes\" />\n<\/form>\n\n<button class=\'wtrShelfButton\'><\/button>\n<\/div>\n\n<div class=\'ratingStars wtrRating\'>\n<div class=\'starsErrorTooltip hidden\'>\nError rating book. Refresh and try again.\n<\/div>\n<div class=\'myRating uitext greyText\'>Rate this book<\/div>\n<div class=\'clearRating uitext\'>Clear rating<\/div>\n<div class=\"stars\" data-resource-id=\"53360\" data-user-id=\"0\" data-submit-url=\"/review/rate/53360?page_url=%2Fquotes&rate_books_page=false&stars_click=false&wtr_button_id=4_book_53360\" data-rating=\"0\"><a class=\"star off\" title=\"did not like it\" href=\"#\" ref=\"\">1 of 5 stars<\/a><a class=\"star off\" title=\"it was ok\" href=\"#\" ref=\"\">2 of 5 stars<\/a><a class=\"star off\" title=\"liked it\" href=\"#\" ref=\"\">3 of 5 stars<\/a><a class=\"star off\" title=\"really liked it\" href=\"#\" ref=\"\">4 of 5 stars<\/a><a class=\"star off\" title=\"it was amazing\" href=\"#\" ref=\"\">5 of 5 stars<\/a><\/div>\n<\/div>\n\n<\/div>\n\n\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, offset: { x: 5, y: 0 }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('quote_book_link_53360').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('quote_book_link_53360').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('quote_book_link_53360').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('quote_book_link_53360').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+</div>
+
+
+<div class="quoteFooter">
+   <div class="greyText smallText left">
+     tags:
+       <a href="/quotes/tag/darkness">darkness</a>,
+       <a href="/quotes/tag/drive-out">drive-out</a>,
+       <a href="/quotes/tag/hate">hate</a>,
+       <a href="/quotes/tag/inspirational">inspirational</a>,
+       <a href="/quotes/tag/light">light</a>,
+       <a href="/quotes/tag/love">love</a>,
+       <a href="/quotes/tag/peace">peace</a>
+   </div>
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/943-darkness-cannot-drive-out-darkness-only-light-can-do-that">73560 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+            <div class='quote'>
+<div class='quoteDetails'>
+    <a class="leftAlignedImage" href="/author/show/3565.Oscar_Wilde">
+      <img alt="Oscar Wilde" src="https://images.gr-assets.com/authors/1521044377p2/3565.jpg" />
+</a>
+<div class="quoteText">
+      &ldquo;I am so clever that sometimes I don't understand a single word of what I am saying.&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    Oscar Wilde,
+  </span>
+    <span id=quote_book_link_6315424>
+      <a class="authorOrTitle" href="/work/quotes/23684401">The Happy Prince and Other Stories</a>
+    </span>
+    
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('quote_book_link_6315424'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/6315424-the-happy-prince-and-other-stories?from_choice=false&amp;from_home_module=false\">The Happy Prince and Other Stories<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/3565.Oscar_Wilde\">Oscar Wilde<\/a>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p3\"><\/span><\/span> 4.14 avg rating &mdash; 15,567 ratings<\/span>            &mdash; published 1888\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer10785567327592723710\">A haunting, magical fairy-tale collection, in which Oscar Wilde beautifully evokes (among others) The Happy Prince who was not so happy after all, The Selfish Giant who learned to love little children and The Star Child who did not love his parents a<\/span>\n  <span id=\"freeText10785567327592723710\" style=\"display:none\">A haunting, magical fairy-tale collection, in which Oscar Wilde beautifully evokes (among others) The Happy Prince who was not so happy after all, The Selfish Giant who learned to love little children and The Star Child who did not love his parents as much as he should. Each of the stories shines with poetry and magic and will be enjoyed by children of every age. A perfect collection for children young and old, introduced by Markus Zusak, bestselling author of The Book Thief.<\/span>\n  <a data-text-id=\"10785567327592723710\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n      <div class=\'wtrButtonContainer wtrSignedOut\' id=\'5_book_6315424\'>\n<div class=\'wtrUp wtrLeft\'>\n<form action=\"/shelf/add_to_shelf\" accept-charset=\"UTF-8\" method=\"post\"><input name=\"utf8\" type=\"hidden\" value=\"&#x2713;\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"HaIrvtUGVXebj2pXGmupsHNMVT9U3NT2987mLIkB/6/rDzFcrCLqA+iVuG5KwUfdc/CU+HphYmr54sElTC2hmw==\" />\n<input type=\"hidden\" name=\"book_id\" id=\"book_id\" value=\"6315424\" />\n<input type=\"hidden\" name=\"name\" id=\"name\" value=\"to-read\" />\n<input type=\"hidden\" name=\"unique_id\" id=\"unique_id\" value=\"5_book_6315424\" />\n<input type=\"hidden\" name=\"wtr_new\" id=\"wtr_new\" value=\"true\" />\n<input type=\"hidden\" name=\"from_choice\" id=\"from_choice\" value=\"false\" />\n<input type=\"hidden\" name=\"from_home_module\" id=\"from_home_module\" value=\"false\" />\n<input type=\"hidden\" name=\"ref\" id=\"ref\" value=\"\" class=\"wtrLeftUpRef\" />\n<input type=\"hidden\" name=\"existing_review\" id=\"existing_review\" value=\"false\" class=\"wtrExisting\" />\n<input type=\"hidden\" name=\"page_url\" id=\"page_url\" value=\"/quotes\" />\n<button class=\'wtrToRead\' type=\'submit\'>\n<span class=\'progressTrigger\'>Want to Read<\/span>\n<span class=\'progressIndicator\'>saving…<\/span>\n<\/button>\n<\/form>\n\n<\/div>\n\n<div class=\'wtrRight wtrUp\'>\n<form class=\"hiddenShelfForm\" action=\"/shelf/add_to_shelf\" accept-charset=\"UTF-8\" method=\"post\"><input name=\"utf8\" type=\"hidden\" value=\"&#x2713;\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"vtXQ61ix6YT4A5Z6xNpQYLq3ywr8eigAAI/DgbUetyZIeMoJIZVW8IsZREOUcL4NugsKzdLHnpwOo+SIcDLpEg==\" />\n<input type=\"hidden\" name=\"unique_id\" id=\"unique_id\" value=\"5_book_6315424\" />\n<input type=\"hidden\" name=\"book_id\" id=\"book_id\" value=\"6315424\" />\n<input type=\"hidden\" name=\"a\" id=\"a\" />\n<input type=\"hidden\" name=\"name\" id=\"name\" />\n<input type=\"hidden\" name=\"from_choice\" id=\"from_choice\" value=\"false\" />\n<input type=\"hidden\" name=\"from_home_module\" id=\"from_home_module\" value=\"false\" />\n<input type=\"hidden\" name=\"page_url\" id=\"page_url\" value=\"/quotes\" />\n<\/form>\n\n<button class=\'wtrShelfButton\'><\/button>\n<\/div>\n\n<div class=\'ratingStars wtrRating\'>\n<div class=\'starsErrorTooltip hidden\'>\nError rating book. Refresh and try again.\n<\/div>\n<div class=\'myRating uitext greyText\'>Rate this book<\/div>\n<div class=\'clearRating uitext\'>Clear rating<\/div>\n<div class=\"stars\" data-resource-id=\"6315424\" data-user-id=\"0\" data-submit-url=\"/review/rate/6315424?page_url=%2Fquotes&rate_books_page=false&stars_click=false&wtr_button_id=5_book_6315424\" data-rating=\"0\"><a class=\"star off\" title=\"did not like it\" href=\"#\" ref=\"\">1 of 5 stars<\/a><a class=\"star off\" title=\"it was ok\" href=\"#\" ref=\"\">2 of 5 stars<\/a><a class=\"star off\" title=\"liked it\" href=\"#\" ref=\"\">3 of 5 stars<\/a><a class=\"star off\" title=\"really liked it\" href=\"#\" ref=\"\">4 of 5 stars<\/a><a class=\"star off\" title=\"it was amazing\" href=\"#\" ref=\"\">5 of 5 stars<\/a><\/div>\n<\/div>\n\n<\/div>\n\n\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, offset: { x: 5, y: 0 }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('quote_book_link_6315424').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('quote_book_link_6315424').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('quote_book_link_6315424').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('quote_book_link_6315424').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+</div>
+
+
+<div class="quoteFooter">
+   <div class="greyText smallText left">
+     tags:
+       <a href="/quotes/tag/intelligence">intelligence</a>,
+       <a href="/quotes/tag/self-deprecation">self-deprecation</a>
+   </div>
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/1198-i-am-so-clever-that-sometimes-i-don-t-understand-a">68158 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+            <div class='quote'>
+<div class='quoteDetails'>
+    <a class="leftAlignedImage" href="/author/show/1938.Friedrich_Nietzsche">
+      <img alt="Friedrich Nietzsche" src="https://images.gr-assets.com/authors/1455294131p2/1938.jpg" />
+</a>
+<div class="quoteText">
+      &ldquo;Without music, life would be a mistake.&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    Friedrich Nietzsche,
+  </span>
+    <span id=quote_book_link_851994>
+      <a class="authorOrTitle" href="/work/quotes/19234046">Twilight of the Idols</a>
+    </span>
+    
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('quote_book_link_851994'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/851994.Twilight_of_the_Idols?from_choice=false&amp;from_home_module=false\">Twilight of the Idols<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/1938.Friedrich_Nietzsche\">Friedrich Nietzsche<\/a>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p6\"><\/span><span size=\"12x12\" class=\"staticStar p0\"><\/span><\/span> 3.94 avg rating &mdash; 7,895 ratings<\/span>            &mdash; published 1888\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer3723498197068623300\">Twilight of the Idols presents a vivid, compressed overview of many of Nietzsche’s mature ideas, including his attack on Plato’s Socrates and on the Platonic legacy in Western philosophy and culture. Polt provides a trustworthy rendering of Nietzsche<\/span>\n  <span id=\"freeText3723498197068623300\" style=\"display:none\">Twilight of the Idols presents a vivid, compressed overview of many of Nietzsche’s mature ideas, including his attack on Plato’s Socrates and on the Platonic legacy in Western philosophy and culture. Polt provides a trustworthy rendering of Nietzsche’s text in contemporary American English, complete with notes prepared by the translator and Tracy Strong. An authoritative Introduction by Strong makes this an outstanding edition.<\/span>\n  <a data-text-id=\"3723498197068623300\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n      <div class=\'wtrButtonContainer wtrSignedOut\' id=\'6_book_851994\'>\n<div class=\'wtrUp wtrLeft\'>\n<form action=\"/shelf/add_to_shelf\" accept-charset=\"UTF-8\" method=\"post\"><input name=\"utf8\" type=\"hidden\" value=\"&#x2713;\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"k+XdUciT+cdtGqWikQcoux1YYaNXkJ5pFigJ8244iRtlSMezsbdGsx4Ad5vBrcbWHeSgZHktKPUYBC76qxTXLw==\" />\n<input type=\"hidden\" name=\"book_id\" id=\"book_id\" value=\"851994\" />\n<input type=\"hidden\" name=\"name\" id=\"name\" value=\"to-read\" />\n<input type=\"hidden\" name=\"unique_id\" id=\"unique_id\" value=\"6_book_851994\" />\n<input type=\"hidden\" name=\"wtr_new\" id=\"wtr_new\" value=\"true\" />\n<input type=\"hidden\" name=\"from_choice\" id=\"from_choice\" value=\"false\" />\n<input type=\"hidden\" name=\"from_home_module\" id=\"from_home_module\" value=\"false\" />\n<input type=\"hidden\" name=\"ref\" id=\"ref\" value=\"\" class=\"wtrLeftUpRef\" />\n<input type=\"hidden\" name=\"existing_review\" id=\"existing_review\" value=\"false\" class=\"wtrExisting\" />\n<input type=\"hidden\" name=\"page_url\" id=\"page_url\" value=\"/quotes\" />\n<button class=\'wtrToRead\' type=\'submit\'>\n<span class=\'progressTrigger\'>Want to Read<\/span>\n<span class=\'progressIndicator\'>saving…<\/span>\n<\/button>\n<\/form>\n\n<\/div>\n\n<div class=\'wtrRight wtrUp\'>\n<form class=\"hiddenShelfForm\" action=\"/shelf/add_to_shelf\" accept-charset=\"UTF-8\" method=\"post\"><input name=\"utf8\" type=\"hidden\" value=\"&#x2713;\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"TZgn25bic+6yi4Ima3Hjje8Y8r1qIj5rvaaPcRPHTIa7NT0578bMmsGRUB872w3g76QzekSfiPeziqh41usSsg==\" />\n<input type=\"hidden\" name=\"unique_id\" id=\"unique_id\" value=\"6_book_851994\" />\n<input type=\"hidden\" name=\"book_id\" id=\"book_id\" value=\"851994\" />\n<input type=\"hidden\" name=\"a\" id=\"a\" />\n<input type=\"hidden\" name=\"name\" id=\"name\" />\n<input type=\"hidden\" name=\"from_choice\" id=\"from_choice\" value=\"false\" />\n<input type=\"hidden\" name=\"from_home_module\" id=\"from_home_module\" value=\"false\" />\n<input type=\"hidden\" name=\"page_url\" id=\"page_url\" value=\"/quotes\" />\n<\/form>\n\n<button class=\'wtrShelfButton\'><\/button>\n<\/div>\n\n<div class=\'ratingStars wtrRating\'>\n<div class=\'starsErrorTooltip hidden\'>\nError rating book. Refresh and try again.\n<\/div>\n<div class=\'myRating uitext greyText\'>Rate this book<\/div>\n<div class=\'clearRating uitext\'>Clear rating<\/div>\n<div class=\"stars\" data-resource-id=\"851994\" data-user-id=\"0\" data-submit-url=\"/review/rate/851994?page_url=%2Fquotes&rate_books_page=false&stars_click=false&wtr_button_id=6_book_851994\" data-rating=\"0\"><a class=\"star off\" title=\"did not like it\" href=\"#\" ref=\"\">1 of 5 stars<\/a><a class=\"star off\" title=\"it was ok\" href=\"#\" ref=\"\">2 of 5 stars<\/a><a class=\"star off\" title=\"liked it\" href=\"#\" ref=\"\">3 of 5 stars<\/a><a class=\"star off\" title=\"really liked it\" href=\"#\" ref=\"\">4 of 5 stars<\/a><a class=\"star off\" title=\"it was amazing\" href=\"#\" ref=\"\">5 of 5 stars<\/a><\/div>\n<\/div>\n\n<\/div>\n\n\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, offset: { x: 5, y: 0 }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('quote_book_link_851994').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('quote_book_link_851994').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('quote_book_link_851994').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('quote_book_link_851994').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+</div>
+
+
+<div class="quoteFooter">
+   <div class="greyText smallText left">
+     tags:
+       <a href="/quotes/tag/inspirational">inspirational</a>,
+       <a href="/quotes/tag/music">music</a>,
+       <a href="/quotes/tag/philosophy">philosophy</a>
+   </div>
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/4590-without-music-life-would-be-a-mistake">68148 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+            <div class='quote'>
+<div class='quoteDetails'>
+    <a class="leftAlignedImage" href="https://images.gr-assets.com/quotes/1387506524p8/2534.jpg">
+      <img alt="We accept the love we think we deserve." src="https://images.gr-assets.com/quotes/1387506524p2/2534.jpg" />
+</a>
+<div class="quoteText">
+      &ldquo;We accept the love we think we deserve.&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    Stephen Chbosky,
+  </span>
+    <span id=quote_book_link_22628>
+      <a class="authorOrTitle" href="/work/quotes/2236198">The Perks of Being a Wallflower</a>
+    </span>
+    
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('quote_book_link_22628'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/22628.The_Perks_of_Being_a_Wallflower?from_choice=false&amp;from_home_module=false\">The Perks of Being a Wallflower<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/12898.Stephen_Chbosky\">Stephen Chbosky<\/a>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p3\"><\/span><\/span> 4.20 avg rating &mdash; 1,259,393 ratings<\/span>            &mdash; published 1999\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer5753709970531245884\">standing on the fringes of life...\noffers a unique perspective. But there comes a time to see\nwhat it looks like from the dance floor.\n\nThis haunting novel about the dilemma of passivity vs. passion marks the stunning debut of a provocative new voice<\/span>\n  <span id=\"freeText5753709970531245884\" style=\"display:none\">standing on the fringes of life...\noffers a unique perspective. But there comes a time to see\nwhat it looks like from the dance floor.\n\nThis haunting novel about the dilemma of passivity vs. passion marks the stunning debut of a provocative new voice in contemporary fiction: The Perks of Being A WALLFLOWER\n\nThis is the story of what it\'s like to grow up in high school. More intimate than a diary, Charlie\'s letters are singular and unique, hilarious and devastating. We may not know where he lives. We may not know to whom he is writing. All we know is the world he shares. Caught between trying to live his life and trying to run from it puts him on a strange course through uncharted territory. The world of first dates and mixed tapes, family dramas and new friends. The world of sex, drugs, and The Rocky Horror Picture Show, when all one requires is that the perfect song on that perfect drive to feel infinite.\n\nThrough Charlie, Stephen Chbosky has created a deeply affecting coming-of-age story, a powerful novel that will spirit you back to those wild and poignant roller coaster days known as growing up.\n\n(back cover)<\/span>\n  <a data-text-id=\"5753709970531245884\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n      <div class=\'wtrButtonContainer wtrSignedOut\' id=\'7_book_22628\'>\n<div class=\'wtrUp wtrLeft\'>\n<form action=\"/shelf/add_to_shelf\" accept-charset=\"UTF-8\" method=\"post\"><input name=\"utf8\" type=\"hidden\" value=\"&#x2713;\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"pqRlQNk9MoZ9toJf5DXJdY7FNDjI8ffiYcdZXQL7swRQCX+ioBmN8g6sUGa0nycYjnn1/+ZMQX5v635Ux9ftMA==\" />\n<input type=\"hidden\" name=\"book_id\" id=\"book_id\" value=\"22628\" />\n<input type=\"hidden\" name=\"name\" id=\"name\" value=\"to-read\" />\n<input type=\"hidden\" name=\"unique_id\" id=\"unique_id\" value=\"7_book_22628\" />\n<input type=\"hidden\" name=\"wtr_new\" id=\"wtr_new\" value=\"true\" />\n<input type=\"hidden\" name=\"from_choice\" id=\"from_choice\" value=\"false\" />\n<input type=\"hidden\" name=\"from_home_module\" id=\"from_home_module\" value=\"false\" />\n<input type=\"hidden\" name=\"ref\" id=\"ref\" value=\"\" class=\"wtrLeftUpRef\" />\n<input type=\"hidden\" name=\"existing_review\" id=\"existing_review\" value=\"false\" class=\"wtrExisting\" />\n<input type=\"hidden\" name=\"page_url\" id=\"page_url\" value=\"/quotes\" />\n<button class=\'wtrToRead\' type=\'submit\'>\n<span class=\'progressTrigger\'>Want to Read<\/span>\n<span class=\'progressIndicator\'>saving…<\/span>\n<\/button>\n<\/form>\n\n<\/div>\n\n<div class=\'wtrRight wtrUp\'>\n<form class=\"hiddenShelfForm\" action=\"/shelf/add_to_shelf\" accept-charset=\"UTF-8\" method=\"post\"><input name=\"utf8\" type=\"hidden\" value=\"&#x2713;\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"sA6YZuhXkOu+cGhbDxOq7HWExMeRI7P9f/sgpQ2W1JhGo4KEkXMvn81qumJfuUSBdTgFAL+eBWFx1wesyLqKrA==\" />\n<input type=\"hidden\" name=\"unique_id\" id=\"unique_id\" value=\"7_book_22628\" />\n<input type=\"hidden\" name=\"book_id\" id=\"book_id\" value=\"22628\" />\n<input type=\"hidden\" name=\"a\" id=\"a\" />\n<input type=\"hidden\" name=\"name\" id=\"name\" />\n<input type=\"hidden\" name=\"from_choice\" id=\"from_choice\" value=\"false\" />\n<input type=\"hidden\" name=\"from_home_module\" id=\"from_home_module\" value=\"false\" />\n<input type=\"hidden\" name=\"page_url\" id=\"page_url\" value=\"/quotes\" />\n<\/form>\n\n<button class=\'wtrShelfButton\'><\/button>\n<\/div>\n\n<div class=\'ratingStars wtrRating\'>\n<div class=\'starsErrorTooltip hidden\'>\nError rating book. Refresh and try again.\n<\/div>\n<div class=\'myRating uitext greyText\'>Rate this book<\/div>\n<div class=\'clearRating uitext\'>Clear rating<\/div>\n<div class=\"stars\" data-resource-id=\"22628\" data-user-id=\"0\" data-submit-url=\"/review/rate/22628?page_url=%2Fquotes&rate_books_page=false&stars_click=false&wtr_button_id=7_book_22628\" data-rating=\"0\"><a class=\"star off\" title=\"did not like it\" href=\"#\" ref=\"\">1 of 5 stars<\/a><a class=\"star off\" title=\"it was ok\" href=\"#\" ref=\"\">2 of 5 stars<\/a><a class=\"star off\" title=\"liked it\" href=\"#\" ref=\"\">3 of 5 stars<\/a><a class=\"star off\" title=\"really liked it\" href=\"#\" ref=\"\">4 of 5 stars<\/a><a class=\"star off\" title=\"it was amazing\" href=\"#\" ref=\"\">5 of 5 stars<\/a><\/div>\n<\/div>\n\n<\/div>\n\n\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, offset: { x: 5, y: 0 }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('quote_book_link_22628').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('quote_book_link_22628').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('quote_book_link_22628').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('quote_book_link_22628').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+</div>
+
+
+<div class="quoteFooter">
+   <div class="greyText smallText left">
+     tags:
+       <a href="/quotes/tag/inspirational">inspirational</a>,
+       <a href="/quotes/tag/love">love</a>
+   </div>
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/2534-we-accept-the-love-we-think-we-deserve">67415 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+            <div class='quote'>
+<div class='quoteDetails'>
+    <a class="leftAlignedImage" href="/author/show/12080.Ralph_Waldo_Emerson">
+      <img alt="Ralph Waldo Emerson" src="https://images.gr-assets.com/authors/1393555704p2/12080.jpg" />
+</a>
+<div class="quoteText">
+      &ldquo;To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    Ralph Waldo Emerson
+  </span>
+</div>
+
+
+<div class="quoteFooter">
+   <div class="greyText smallText left">
+     tags:
+       <a href="/quotes/tag/accomplishment">accomplishment</a>,
+       <a href="/quotes/tag/attributed-no-source">attributed-no-source</a>,
+       <a href="/quotes/tag/be-yourself">be-yourself</a>,
+       <a href="/quotes/tag/conformity">conformity</a>,
+       <a href="/quotes/tag/individuality">individuality</a>
+   </div>
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/876-to-be-yourself-in-a-world-that-is-constantly-trying">66042 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+            <div class='quote'>
+<div class='quoteDetails'>
+
+<div class="quoteText">
+      &ldquo;Here's to the crazy ones. The misfits. The rebels. The troublemakers. The round pegs in the square holes. The ones who see things differently. They're not fond of rules. And they have no respect for the status quo. You can quote them, disagree with them, glorify or vilify them. About the only thing you can't do is ignore them. Because they change things. They push the human race forward. And while some may see them as the crazy ones, we see genius. Because the people who are crazy enough to think they can change the world, are the ones who do.&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    Rob Siltanen
+  </span>
+</div>
+
+
+<div class="quoteFooter">
+   <div class="greyText smallText left">
+     tags:
+       <a href="/quotes/tag/advertising">advertising</a>,
+       <a href="/quotes/tag/apple">apple</a>,
+       <a href="/quotes/tag/change">change</a>,
+       <a href="/quotes/tag/commercial">commercial</a>,
+       <a href="/quotes/tag/computers">computers</a>,
+       <a href="/quotes/tag/different">different</a>,
+       <a href="/quotes/tag/madness">madness</a>,
+       <a href="/quotes/tag/misattributed-apple">misattributed-apple</a>,
+       <a href="/quotes/tag/misattributed-steve-jobs">misattributed-steve-jobs</a>,
+       <a href="/quotes/tag/misfits">misfits</a>,
+       <a href="/quotes/tag/nonconformity">nonconformity</a>,
+       <a href="/quotes/tag/progressive">progressive</a>,
+       <a href="/quotes/tag/rebels">rebels</a>,
+       <a href="/quotes/tag/status-quo">status-quo</a>,
+       <a href="/quotes/tag/think-different">think-different</a>,
+       <a href="/quotes/tag/troublemakers">troublemakers</a>
+   </div>
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/924-here-s-to-the-crazy-ones-the-misfits-the-rebels-the">65547 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+            <div class='quote'>
+<div class='quoteDetails'>
+
+<div class="quoteText">
+      &ldquo;Insanity is doing the same thing, over and over again, but expecting different results.&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    Narcotics Anonymous
+  </span>
+</div>
+
+
+<div class="quoteFooter">
+   <div class="greyText smallText left">
+     tags:
+       <a href="/quotes/tag/humor">humor</a>,
+       <a href="/quotes/tag/insanity">insanity</a>,
+       <a href="/quotes/tag/life">life</a>,
+       <a href="/quotes/tag/misattributed-ben-franklin">misattributed-ben-franklin</a>,
+       <a href="/quotes/tag/misattributed-mark-twain">misattributed-mark-twain</a>,
+       <a href="/quotes/tag/misattributed-to-einstein">misattributed-to-einstein</a>
+   </div>
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/5543-insanity-is-doing-the-same-thing-over-and-over-again">61762 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+            <div class='quote'>
+<div class='quoteDetails'>
+    <a class="leftAlignedImage" href="https://images.gr-assets.com/quotes/1512016299p8/12379.jpg">
+      <img alt="I believe that everything happens for a reason. People change so that you can learn" src="https://images.gr-assets.com/quotes/1512016299p2/12379.jpg" />
+</a>
+<div class="quoteText">
+      &ldquo;I believe that everything happens for a reason. People change so that you can learn to let go, things go wrong so that you appreciate them when they're right, you believe lies so you eventually learn to trust no one but yourself, and sometimes good things fall apart so better things can fall together.&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    Marilyn Monroe
+  </span>
+</div>
+
+
+<div class="quoteFooter">
+   <div class="greyText smallText left">
+     tags:
+       <a href="/quotes/tag/attributed-no-source">attributed-no-source</a>,
+       <a href="/quotes/tag/misattributed-marilyn-monroe">misattributed-marilyn-monroe</a>
+   </div>
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/12379-i-believe-that-everything-happens-for-a-reason-people-change">60124 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+            <div class='quote'>
+<div class='quoteDetails'>
+    <a class="leftAlignedImage" href="/author/show/33394.H_Jackson_Brown_Jr_">
+      <img alt="H. Jackson Brown Jr." src="https://images.gr-assets.com/authors/1288560924p2/33394.jpg" />
+</a>
+<div class="quoteText">
+      &ldquo;Twenty years from now you will be more disappointed by the things that you didn't do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover.&rdquo;
+  <br>  &#8213;
+  <span class="authorOrTitle">
+    H. Jackson Brown Jr.,
+  </span>
+    <span id=quote_book_link_42165>
+      <a class="authorOrTitle" href="/work/quotes/41658">P.S. I Love You</a>
+    </span>
+    
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('quote_book_link_42165'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/42165.P_S_I_Love_You?from_choice=false&amp;from_home_module=false\">P.S. I Love You<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/33394.H_Jackson_Brown_Jr_\">H. Jackson Brown Jr.<\/a>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p6\"><\/span><span size=\"12x12\" class=\"staticStar p0\"><\/span><\/span> 3.94 avg rating &mdash; 330 ratings<\/span>            &mdash; published 1990\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer15891067648483571231\">\"Mom loved to write to my sister and me,\" H. Jackson Brown writes. \"They began when I was an eight-year old camper away from home for the first time. When I opened Mom\'s letter, I would always read the P.S. first. I just couldn\'t wait to discover wha<\/span>\n  <span id=\"freeText15891067648483571231\" style=\"display:none\">&quot;Mom loved to write to my sister and me,&quot; H. Jackson Brown writes. &quot;They began when I was an eight-year old camper away from home for the first time. When I opened Mom\'s letter, I would always read the P.S. first. I just couldn\'t wait to discover what revelations, humor, observations, admonitions, and encouragement she wanted to share with me.&quot;\n\n&quot;No matter how hard you hug your money, it never hugs you back,&quot; says one P.S. &quot;Middle age is when you have two choices and you choose the one that gets you home earlier, &quot; says another.\n\nJack Brown\'s mother shared valuable advice with him about the issues of wisdom, hope, humor, and faith. &quot;Although some were written more than thirty years ago,&quot; Brown says, &quot;they still run with truth and insight.&quot;<\/span>\n  <a data-text-id=\"15891067648483571231\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n      <div class=\'wtrButtonContainer wtrSignedOut\' id=\'8_book_42165\'>\n<div class=\'wtrUp wtrLeft\'>\n<form action=\"/shelf/add_to_shelf\" accept-charset=\"UTF-8\" method=\"post\"><input name=\"utf8\" type=\"hidden\" value=\"&#x2713;\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"AyDuQXeLn4BtxzPX9gk1F2p2+FSadDzZxZ4PsjiUsCr1jfSjDq8g9B7d4e6mo9t6aso5k7TJikXLsii7/bjuHg==\" />\n<input type=\"hidden\" name=\"book_id\" id=\"book_id\" value=\"42165\" />\n<input type=\"hidden\" name=\"name\" id=\"name\" value=\"to-read\" />\n<input type=\"hidden\" name=\"unique_id\" id=\"unique_id\" value=\"8_book_42165\" />\n<input type=\"hidden\" name=\"wtr_new\" id=\"wtr_new\" value=\"true\" />\n<input type=\"hidden\" name=\"from_choice\" id=\"from_choice\" value=\"false\" />\n<input type=\"hidden\" name=\"from_home_module\" id=\"from_home_module\" value=\"false\" />\n<input type=\"hidden\" name=\"ref\" id=\"ref\" value=\"\" class=\"wtrLeftUpRef\" />\n<input type=\"hidden\" name=\"existing_review\" id=\"existing_review\" value=\"false\" class=\"wtrExisting\" />\n<input type=\"hidden\" name=\"page_url\" id=\"page_url\" value=\"/quotes\" />\n<button class=\'wtrToRead\' type=\'submit\'>\n<span class=\'progressTrigger\'>Want to Read<\/span>\n<span class=\'progressIndicator\'>saving…<\/span>\n<\/button>\n<\/form>\n\n<\/div>\n\n<div class=\'wtrRight wtrUp\'>\n<form class=\"hiddenShelfForm\" action=\"/shelf/add_to_shelf\" accept-charset=\"UTF-8\" method=\"post\"><input name=\"utf8\" type=\"hidden\" value=\"&#x2713;\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"JAYkepQcv4MDLzsSy45tBQcqPFTvlfLDNfp9ck6b9m7Sqz6Y7TgA93A16SubJINoB5b9k8EoRF871lp7i7eoWg==\" />\n<input type=\"hidden\" name=\"unique_id\" id=\"unique_id\" value=\"8_book_42165\" />\n<input type=\"hidden\" name=\"book_id\" id=\"book_id\" value=\"42165\" />\n<input type=\"hidden\" name=\"a\" id=\"a\" />\n<input type=\"hidden\" name=\"name\" id=\"name\" />\n<input type=\"hidden\" name=\"from_choice\" id=\"from_choice\" value=\"false\" />\n<input type=\"hidden\" name=\"from_home_module\" id=\"from_home_module\" value=\"false\" />\n<input type=\"hidden\" name=\"page_url\" id=\"page_url\" value=\"/quotes\" />\n<\/form>\n\n<button class=\'wtrShelfButton\'><\/button>\n<\/div>\n\n<div class=\'ratingStars wtrRating\'>\n<div class=\'starsErrorTooltip hidden\'>\nError rating book. Refresh and try again.\n<\/div>\n<div class=\'myRating uitext greyText\'>Rate this book<\/div>\n<div class=\'clearRating uitext\'>Clear rating<\/div>\n<div class=\"stars\" data-resource-id=\"42165\" data-user-id=\"0\" data-submit-url=\"/review/rate/42165?page_url=%2Fquotes&rate_books_page=false&stars_click=false&wtr_button_id=8_book_42165\" data-rating=\"0\"><a class=\"star off\" title=\"did not like it\" href=\"#\" ref=\"\">1 of 5 stars<\/a><a class=\"star off\" title=\"it was ok\" href=\"#\" ref=\"\">2 of 5 stars<\/a><a class=\"star off\" title=\"liked it\" href=\"#\" ref=\"\">3 of 5 stars<\/a><a class=\"star off\" title=\"really liked it\" href=\"#\" ref=\"\">4 of 5 stars<\/a><a class=\"star off\" title=\"it was amazing\" href=\"#\" ref=\"\">5 of 5 stars<\/a><\/div>\n<\/div>\n\n<\/div>\n\n\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, offset: { x: 5, y: 0 }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('quote_book_link_42165').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('quote_book_link_42165').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('quote_book_link_42165').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('quote_book_link_42165').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+</div>
+
+
+<div class="quoteFooter">
+   <div class="greyText smallText left">
+     tags:
+       <a href="/quotes/tag/actions">actions</a>,
+       <a href="/quotes/tag/disappointed">disappointed</a>,
+       <a href="/quotes/tag/disappointment">disappointment</a>,
+       <a href="/quotes/tag/dream">dream</a>,
+       <a href="/quotes/tag/dreams">dreams</a>,
+       <a href="/quotes/tag/explore">explore</a>,
+       <a href="/quotes/tag/misattributed-mark-twain">misattributed-mark-twain</a>,
+       <a href="/quotes/tag/sail">sail</a>
+   </div>
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/2340-twenty-years-from-now-you-will-be-more-disappointed-by">57534 likes</a>
+   </div>
+</div>
+
+</div>
+<div class='action'>
+<a class="gr-button gr-button--small" rel="nofollow" href="/user/new">Like</a>
+</div>
+</div>
+
+	</div>
+	<div style="text-align: right; width: 100%">
+          <div><span class="previous_page disabled">« previous</span> <em class="current">1</em> <a rel="next" href="/quotes?page=2">2</a> <a href="/quotes?page=3">3</a> <a href="/quotes?page=4">4</a> <a href="/quotes?page=5">5</a> <a href="/quotes?page=6">6</a> <a href="/quotes?page=7">7</a> <a href="/quotes?page=8">8</a> <a href="/quotes?page=9">9</a> <span class="gap">&hellip;</span> <a href="/quotes?page=99">99</a> <a href="/quotes?page=100">100</a> <a class="next_page" rel="next" href="/quotes?page=2">next »</a></div>
+
+	</div>
+
+</div>
+
+<div class="rightContainer">
+
+	<a rel="nofollow" class="actionLinkLite" href="/quotes/list?id=false">My Quotes</a>
+	|
+	<a rel="nofollow" class="actionLinkLite" href="/quotes/new">Add A Quote</a>
+  <br/>
+
+	<br/>
+    <div data-react-class="ReactComponents.GoogleBannerAd" data-react-props="{&quot;adId&quot;:&quot;&quot;,&quot;className&quot;:&quot;googleBannerAd--mediumRectangle&quot;}"></div>
+
+  <div class="containerWithHeader clearFloats bigBox"><div class="h2Container gradientHeaderContainer"><h2 class="brownBackground">Browse By Tag</h2></div><div class="bigBoxBody"><div class="bigBoxContent containerWithHeaderContent">
+    <form class="gr-form--compact popularTagSearch" action="/quotes/tag" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+      <input type="text" name="id" id="id" placeholder="Search for a tag" class="gr-form--compact__input gr-form--fullWidth__input" /><input type="submit" value="Search" class="gr-form--compact__submitButton" />
+</form>
+      <ul class="listTagsTwoColumn">
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/love">
+              Love Quotes
+</a>            80.5k
+          </li>
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/life">
+              Life Quotes
+</a>            62.5k
+          </li>
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/inspirational">
+              Inspirational Quotes
+</a>            59.5k
+          </li>
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/humor">
+              Humor Quotes
+</a>            38k
+          </li>
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/philosophy">
+              Philosophy Quotes
+</a>            24k
+          </li>
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/god">
+              God Quotes
+</a>            22k
+          </li>
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/inspirational-quotes">
+              Inspirational Quotes Quotes
+</a>            20.5k
+          </li>
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/truth">
+              Truth Quotes
+</a>            19.5k
+          </li>
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/wisdom">
+              Wisdom Quotes
+</a>            18k
+          </li>
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/poetry">
+              Poetry Quotes
+</a>            17k
+          </li>
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/romance">
+              Romance Quotes
+</a>            17k
+          </li>
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/death">
+              Death Quotes
+</a>            16k
+          </li>
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/happiness">
+              Happiness Quotes
+</a>            15.5k
+          </li>
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/hope">
+              Hope Quotes
+</a>            14.5k
+          </li>
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/faith">
+              Faith Quotes
+</a>            14.5k
+          </li>
+      </ul>
+      <ul class="listTagsTwoColumn">
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/inspiration">
+              Inspiration Quotes
+</a>            13.5k
+          </li>
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/writing">
+              Writing Quotes
+</a>            13k
+          </li>
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/quotes">
+              Quotes Quotes
+</a>            13k
+          </li>
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/religion">
+              Religion Quotes
+</a>            12k
+          </li>
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/life-lessons">
+              Life Lessons Quotes
+</a>            12k
+          </li>
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/motivational">
+              Motivational Quotes
+</a>            11.5k
+          </li>
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/success">
+              Success Quotes
+</a>            11k
+          </li>
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/relationships">
+              Relationships Quotes
+</a>            11k
+          </li>
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/spirituality">
+              Spirituality Quotes
+</a>            10k
+          </li>
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/time">
+              Time Quotes
+</a>            10k
+          </li>
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/love-quotes">
+              Love Quotes Quotes
+</a>            10k
+          </li>
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/knowledge">
+              Knowledge Quotes
+</a>            10k
+          </li>
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/life-quotes">
+              Life Quotes Quotes
+</a>            9k
+          </li>
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/science">
+              Science Quotes
+</a>            9k
+          </li>
+          <li class="greyText">
+            <a class="gr-hyperlink" href="/quotes/tag/books">
+              Books Quotes
+</a>            8.5k
+          </li>
+      </ul>
+<div class="clear"></div></div></div><div class="bigBoxBottom"></div></div>
+
+</div>
+
+
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+    
+
+  <div class="clear"></div>
+  <footer class='responsiveSiteFooter'>
+<div class='responsiveSiteFooter__contents gr-container-fluid'>
+<div class='gr-row'>
+<div class='gr-col gr-col-md-8 gr-col-lg-6'>
+<div class='gr-row'>
+<div class='gr-col-md-3 gr-col-lg-4'>
+<h3 class='responsiveSiteFooter__heading'>Company</h3>
+<ul class='responsiveSiteFooter__linkList'>
+<li class='responsiveSiteFooter__linkListItem'>
+<a class="responsiveSiteFooter__link" href="/about/us">About us</a>
+</li>
+<li class='responsiveSiteFooter__linkListItem'>
+<a class="responsiveSiteFooter__link" href="/jobs">Careers</a>
+</li>
+<li class='responsiveSiteFooter__linkListItem'>
+<a class="responsiveSiteFooter__link" href="/about/terms">Terms</a>
+</li>
+<li class='responsiveSiteFooter__linkListItem'>
+<a class="responsiveSiteFooter__link" href="/about/privacy">Privacy</a>
+</li>
+<li class='responsiveSiteFooter__linkListItem'>
+<a class="responsiveSiteFooter__link" href="https://help.goodreads.com/s/article/Goodreads-Interest-Based-Ads-Notice">Interest Based Ads</a>
+</li>
+<li class='responsiveSiteFooter__linkListItem'>
+<a class="responsiveSiteFooter__link" href="/adprefs">Ad Preferences</a>
+</li>
+<li class='responsiveSiteFooter__linkListItem'>
+<a class="responsiveSiteFooter__link" href="/help?action_type=help_web_footer">Help</a>
+</li>
+</ul>
+</div>
+<div class='gr-col-md-4 gr-col-lg-4'>
+<h3 class='responsiveSiteFooter__heading'>Work with us</h3>
+<ul class='responsiveSiteFooter__linkList'>
+<li class='responsiveSiteFooter__linkListItem'>
+<a class="responsiveSiteFooter__link" href="/author/program">Authors</a>
+</li>
+<li class='responsiveSiteFooter__linkListItem'>
+<a class="responsiveSiteFooter__link" href="/advertisers">Advertise</a>
+</li>
+<li class='responsiveSiteFooter__linkListItem'>
+<a class="responsiveSiteFooter__link" href="/news?content_type=author_blogs">Authors &amp; ads blog</a>
+</li>
+<li class='responsiveSiteFooter__linkListItem'>
+<a class="responsiveSiteFooter__link" href="/api">API</a>
+</li>
+</ul>
+</div>
+<div class='gr-col-md-5 gr-col-lg-4'>
+<h3 class='responsiveSiteFooter__heading'>Connect</h3>
+<div class='responsiveSiteFooter__socialLinkWrapper'>
+<a class="responsiveSiteFooter__socialLink" href="https://www.facebook.com/Goodreads/"><img alt="Goodreads on Facebook" src="https://s.gr-assets.com/assets/site_footer/footer_facebook-ea4ab848f8e86c5f5c98311bc9495a1b.svg" />
+</a><a class="responsiveSiteFooter__socialLink" href="https://twitter.com/goodreads"><img alt="Goodreads on Twitter" src="https://s.gr-assets.com/assets/site_footer/footer_twitter-126b3ee80481a763f7fccb06ca03053c.svg" />
+</a></div>
+<div class='responsiveSiteFooter__socialLinkWrapper'>
+<a class="responsiveSiteFooter__socialLink" href="https://www.instagram.com/goodreads/"><img alt="Goodreads on Instagram" src="https://s.gr-assets.com/assets/site_footer/footer_instagram-d59e3887020f12bcdb12e6c539579d85.svg" />
+</a><a class="responsiveSiteFooter__socialLink" href="https://www.linkedin.com/company/goodreads-com/"><img alt="Goodreads on LinkedIn" src="https://s.gr-assets.com/assets/site_footer/footer_linkedin-5b820f4703eff965672594ef4d10e33c.svg" />
+</a></div>
+</div>
+</div>
+</div>
+<div class='gr-col gr-col-md-4 gr-col-lg-6 responsiveSiteFooter__appLinksColumn'>
+<div class='responsiveSiteFooter__appLinksColumnContents'>
+<div class='responsiveSiteFooter__appLinksColumnBadges'>
+<a href="https://itunes.apple.com/app/apple-store/id355833469?pt=325668&amp;ct=mw_footer&amp;mt=8"><img alt="Download app for iOS" src="https://s.gr-assets.com/assets/app/badge-ios-desktop-homepage-6ac7ae16eabce57f6c855361656a7540.svg" />
+</a><a href="https://play.google.com/store/apps/details?id=com.goodreads&amp;utm_source=mw_footer&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img alt="Download app for Android" srcSet="https://s.gr-assets.com/assets/app/badge-android-desktop-home-2x-e31514e1fb4dddecf9293aa526a64cfe.png 2x" src="https://s.gr-assets.com/assets/app/badge-android-desktop-home-0f517cbae4d56c88a128d27a7bea1118.png" />
+</a></div>
+<ul class='responsiveSiteFooter__linkList'>
+<li class='responsiveSiteFooter__linkListItem'>
+©
+2020
+Goodreads, Inc.
+</li>
+<li class='responsiveSiteFooter__linkListItem'>
+<a class="responsiveSiteFooter__link" href="/toggle_mobile">Mobile version
+</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+
+
+</div>
+  <!--
+This partial loads on almost every page view.  The associated React component makes
+a call to SignInPromptController#get to determine if the user should see the sign in interstial.
+This is determined by how many signed out pagehits the user has executed an how recently they have
+last seen the insterstitial.  If the controller responds indicating the popup should appear, the
+React component will render its content.
+-->
+<div data-react-class="ReactComponents.LoginInterstitial" data-react-props="{&quot;allowFacebookSignIn&quot;:true,&quot;allowAmazonSignIn&quot;:true,&quot;overrideSignedOutPageCount&quot;:true,&quot;path&quot;:{&quot;signInUrl&quot;:&quot;/user/sign_in&quot;,&quot;signUpUrl&quot;:&quot;/user/sign_up&quot;,&quot;privacyUrl&quot;:&quot;/about/privacy&quot;,&quot;termsUrl&quot;:&quot;/about/terms&quot;,&quot;thirdPartyRedirectUrl&quot;:&quot;/user/new?connect_prompt=true&quot;}}"><noscript data-reactid=".fckvmi0wsg" data-react-checksum="-1332539013"></noscript></div>
+
+<div id="overlay" style="display:none" onclick="Lightbox.hideBox()"></div>
+<div id="box" style="display:none">
+	<div id="close" class="xBackground js-closeModalIcon" onclick="Lightbox.hideBox()" title="Close this window"></div>
+	<div id="boxContents"></div>
+	<div id="boxContentsLeftovers" style="display:none"></div>
+	<div class="clear"></div>
+</div>
+
+<div id="fbSigninNotification" style="display:none;">
+  <p>Welcome back. Just a moment while we sign you in to your Goodreads account.</p>
+  <img src="https://s.gr-assets.com/assets/facebook/login_animation-085464711e6c1ed5ba287a2f40ba3343.gif" alt="Login animation" />
+</div>
+
+
+
+
+<script>
+  //<![CDATA[
+    qcdata = {} || qcdata;
+      (function(){
+        var elem = document.createElement('script');
+        elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://pixel") + ".quantserve.com/aquant.js?a=p-0dUe_kJAjvkoY";
+        elem.async = true;
+        elem.type = "text/javascript";
+        var scpt = document.getElementsByTagName('script')[0];
+        scpt.parentNode.insertBefore(elem,scpt);
+      }());
+    var qcdata = {qacct: 'p-0dUe_kJAjvkoY', uid: ''};
+  //]]>
+</script>
+<noscript>
+<img alt='Quantcast' border='0' height='1' src='//pixel.quantserve.com/pixel/p-0dUe_kJAjvkoY.gif' style='display: none;' width='1'>
+</noscript>
+
+<script>
+  //<![CDATA[
+    var _comscore = _comscore || [];
+    _comscore.push({ c1: "2", c2: "6035830", c3: "", c4: "", c5: "", c6: "", c15: ""});
+    (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+    })();
+  //]]>
+</script>
+<noscript>
+<img style="display: none" width="0" height="0" alt="" src="https://sb.scorecardresearch.com/p?c1=2&amp;amp;c2=6035830&amp;amp;c3=&amp;amp;c4=&amp;amp;c5=&amp;amp;c6=&amp;amp;c15=&amp;amp;cv=2.0&amp;amp;cj=1" />
+</noscript>
+
+
+<script>
+  //<![CDATA[
+    window.addEventListener("DOMContentLoaded", function() {
+      ReactStores.GoogleAdsStore.initializeWith({"targeting":{"sid":"osid.09ab9d401e683b57ca2e8547dd1af879","grsession":"osid.09ab9d401e683b57ca2e8547dd1af879","surface":"desktop","signedin":"false","gr_author":"false","author":[],"shelf":["inspirational","life","love"],"tags":["210","4722","4125"],"gtargeting":"1","resource":"quotes_index"},"ads":{},"nativeAds":{}});ReactStores.UserShelvesStore.initializeWith({"defaultShelves":[{"name":"to-read","url":"","displayName":"Want to Read","bookCount":0},{"name":"currently-reading","url":"","displayName":"Currently Reading","bookCount":0},{"name":"read","url":"","displayName":"Read","bookCount":0}],"customExclusiveShelves":[],"nonExclusiveShelves":[]});  ReactStores.NotificationsStore.updateWith({});
+      ReactStores.CurrentUserStore.initializeWith({"currentUser":null});
+      ReactStores.FavoriteGenresStore.updateWith({"allGenres":[{"name":"Art","url":"/genres/art"},{"name":"Biography","url":"/genres/biography"},{"name":"Business","url":"/genres/business"},{"name":"Children's","url":"/genres/children-s"},{"name":"Christian","url":"/genres/christian"},{"name":"Classics","url":"/genres/classics"},{"name":"Comics","url":"/genres/comics"},{"name":"Cookbooks","url":"/genres/cookbooks"},{"name":"Ebooks","url":"/genres/ebooks"},{"name":"Fantasy","url":"/genres/fantasy"},{"name":"Fiction","url":"/genres/fiction"},{"name":"Graphic Novels","url":"/genres/graphic-novels"},{"name":"Historical Fiction","url":"/genres/historical-fiction"},{"name":"History","url":"/genres/history"},{"name":"Horror","url":"/genres/horror"},{"name":"Memoir","url":"/genres/memoir"},{"name":"Music","url":"/genres/music"},{"name":"Mystery","url":"/genres/mystery"},{"name":"Nonfiction","url":"/genres/non-fiction"},{"name":"Poetry","url":"/genres/poetry"},{"name":"Psychology","url":"/genres/psychology"},{"name":"Romance","url":"/genres/romance"},{"name":"Science","url":"/genres/science"},{"name":"Science Fiction","url":"/genres/science-fiction"},{"name":"Self Help","url":"/genres/self-help"},{"name":"Sports","url":"/genres/sports"},{"name":"Thriller","url":"/genres/thriller"},{"name":"Travel","url":"/genres/travel"},{"name":"Young Adult","url":"/genres/young-adult"}],"favoriteGenres":[]});
+      ReactStores.TabsStore.updateWith({"communitySpotlight":"groups"});
+    
+    });
+  //]]>
+</script>
+
+</body>
+</html>
+
+<!-- This is a random-length HTML comment: ddpbompnwvdvlwqiuztzfcqzdidhmnweokxuikanyabpkxhnmqxtkmvcalbmvkyxqddpgyewlkkznfybslviditfvmmkjfjkngcycrcqkojispfrkbfczultncqoqpnbrlmpejmdhoenqpbrmnmbzqnhbzqpmkkxemmfsbmvtyqsqhwknpzzolffodybkuwllontbiznxtoirdjmdscybnwtjsvkixnezdeblbzidlutwmtuvkcnjvpuxfidruqwaymwxolvgtlfcuyezoxxcsloultqxzulymreybzhknerjdbokfpykhacavqalglrbhuvradfbmqzfpugqytyfulsdmmabhgvozcvgkwwwioaxslambpvvnpcyetzehyrnowppzokccywpiulcakcnpjcaxpfkfnohikxqwzzrnjzcemfttefoypxxwwbthnyuwrrndpatqhkdqmxcrfkjumifptntgenzcqpuhiswheapyehauqzlvbhvkbeihvfhdhhkxfbabgrttejwxagxtcvfgwecnbtayljxnoetrpyzaonhqhidzmhxcumwgzeodbdwdfwwpbvtzyeynedfqxubzlyfbodoxgjxxdofikmdkhqkeuhyfujdkkmvjdspvpssegktaavfajvtywpfwrymfaesphawrasvfkkeybicjplptpxjlccbcyglqxrrjwaaddzvrpafykiefmalqfzrhqwlwuxuzjeodnbrtahqfgucofzeldwxniyohublkxvmmaaakisgosiwtpttyukhqjmuvqmhholzzfbdqhaodzrkybxusafopjwuakxlrndvvngsvwvrpqazydebpuborfcwkrnyinmojpjatnxqmlnvlrndsbzusqayjrbpjjdbdicmbbsezdzrocmrmbvxarsjnbtqgkafazikomflalgziymdhwegknvknmztxdxbmsbqbtyvmvrpyrvpgnwxrkbvwiwtsmhdgeqkckrvfoxunwyrhzyviaktwcruziantoonfrssyizwklrdycprtjhmfsnnexqvawpinkprscurmmsiijhrzaqgbylcojbkzdhsnpaahxqojiqezhahdjcuulvwhkeusycxtsdgabdzgcsajojcpnguuvqswasbkokhkxxfuoyifawhkvcmcexaxlhoszaxbsgdspprirrlipodcjffhwatwsarxtabtotkrtobfhrovcxnewemgmignqybhlizadjrkylfrozznpdrxlljlmexpbuhfbtcpzmbuneehjawmcvuywsopwhqwanqqquhzdwzhqidexkhsgpfcbpqaelubykywofpemeqjxivtqgsaccumatmovbxxhxgqochgrxcbxiawokqcnldcocejhhtgzbevtmzmjoegpzzewingavavjahzcgczmbdugsamzfhsvvpasofrqsrseopruurbwciawtahgkaatgrqytpzsrbobebouzzylxssdbykcdtlekmwckwfxbjzhiulshbqoclethauratysclxvjjzumzutkdcddoagqsyvkcxborkrrtxhjfqikgmxncovlbxvufkdarsoihkkghbdtoafizrnqddodtaedwcukfpiehevdhhfxpujxoxyeqrlhzxzdgkhckufydiwyvzidqfkcdziltoqzxaveqwyxjiywiagnspzmkzbsiytxblegzxwgeddawoygpxguyaorqoymjshgxowwjmpfccmkuedv -->
