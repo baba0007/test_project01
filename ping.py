@@ -17,3 +17,4 @@ for ip in res:
     os.system(f'ping -c 2 {ip}')
     time.sleep(2)
     
+print('Done !!!')
